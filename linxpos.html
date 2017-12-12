@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Manuais Maria Filó - Portal de informações TI</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- Barra navegação -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        
+        <div class="navbar-header">
+          <!-- Butão da barra de navegação -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+            <span class="sr-only">Alternar Menu</span>
+            <span class="glyphicon glyphicon-th-list"></span>
+          </button>
+          <a href="index.html" class="navbar-brand"><span class="img-logo">Manuais Maria Filó</span></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="barra-navegacao">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li> <a href="index.html">Início</a> </li>
+            <li> <a href="linxpos.html">LinxPOS</a> </li>
+            <li> <a href="linxmanager.html">LinxPOS Manager</a> </li>
+            <li> <a href="linxretaguarda.html">Linx ERP Retaguarda</a> </li>
+            <li> <a href="mide.html">Mid-e</a> </li>
+            <li> <a href="xml.html">XML</a> </li>
+            <li> <a href="suporte.html">Suporte</a> </li>
+
+            <!-- Opção de Login da pagina -->
+            <!--<li class="dropdown"> 
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Minha Conta <span class="caret"></span>
+              </a> 
+              <ul class="dropdown-menu">
+                <li> <a href="#">Editar</a> </li>
+                <li> <a href="#">Logout</a> </li>
+              </ul>
+
+            </li>-->
+
+
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+    
+   	<div class="container" class="row">
+
+   		<div class="page-header" class="col-sm-10" id="area-principal">
+   			<h1>LinxPOS</h1>
+        <p>
+          O Linx POS é um software especialmente desenvolvido para gerenciar e controlar as operações no ponto de venda. Oferece consultas e relatórios relativamente às vendas, fechamentos e controle de caixa, além de permitir a geração de informações que devem estar sempre disponíveis para eventuais fiscalizações.<br>
+        </p>
+   		</div>
+            <!-- Criação das abas -->
+      <ul class="nav nav-pills nav-justified" role="tablist">
+      <!--<ul class="nav nav-pills" role="tablist">-->
+      <!--<ul class="nav nav-tabs" role="tablist"> -->
+        <li class="active"><a href="#vendas" role="tab" data-toggle="tab">Vendas</a></li>
+        <li><a href="#caixa" role="tab" data-toggle="tab">Caixa</a></li>
+        <li><a href="#consultas" role="tab" data-toggle="tab">Consultas</a></li>
+        <li><a href="#configuracoes" role="tab" data-toggle="tab">Configurações</a></li>
+      </ul>
+
+      <!-- Conteúdo das abas -->
+      <div class="tab-content">
+
+        <!-- aba vendas -->
+        <div class="tab-pane active" role="tabpanel" id="vendas">
+          <h3>Vendas</h3>
+          <p>
+            Existem diversas formas para realização de vendas no  sistema LinxPOS, aqui vamos listar as mais utilizadas<br>
+            <strong>OBS.:</strong>Para realizar uma venda no sistema deverão ser atendidos os pré-requisitos abaixo, somente após realizar esses procedimentos será possivel realizar uma venda.
+          </p>
+          <ul>
+              <li> Abertura de Caixa </li>
+              <li> Abertura Fiscal - Leitura X - <strong>APENAS PARA LOJAS COM IMPRESSORA FISCAL</strong></li>
+          </ul>
+          <h3>Venda Simples</h3>
+          <ol>
+            <li>
+              Selecionar o módulo de <strong>Vendas</strong> no Menu principal
+            </li>
+            <img src="imagens/linxpos-menu.jpg" class="img-responsive">
+            <li><hr>
+              Séra exibida a tela de segurança do sistema para validação do operador e senha. <strong>Selecionar o operador e digitar a senha.</strong>
+            </li><hr>
+            <img src="imagens/linxpos-login.jpg" class="img-responsive">
+            <li><hr>
+              Na tela de vendas, sempre será exibida a lista de validação com o cadastro de todos os vendedores ativos no sistema, <strong>selecione o vendedor correspondente a venda atual.</strong>
+            </li><hr>
+              <img src="imagens/linxpos-lista-vendedores.jpg" class="img-responsive"><hr>
+            <li> <hr>
+              Proximo passo será incluir o cliente para fidelização junto a marca Maria Filó inserindo o CPF do cliente em atendimento, caso o cliente já possua cadastro no sistema os mesmo preencherá os dados automaticamente caso ao contrario o mesmo deve ser cadastrado.<br>
+              <img src="imagens/linxpos-consulta-cliente.jpg" class="img-responsive"><br>
+              <strong>OBS.:</strong>Existem 3 formas para localizar o cadastro do cliente: CÓDIGO/CPF, NOME ou TELEFONE.
+              <ul>
+                  <p>Segue abaixo os campos obrigatórios para realizar o cadastro do cliente.</p><hr>
+                  <li>CPF</li>
+                  <li>NOMECOMPLETO</li>
+                  <li>ENDEREÇO COMPLETO (CEP, LOGRADOURO, ENDEREÇO, NÚMERO, BAIRRO, CIDADE, UF e PAÍS)</li>
+                  <li>TELEFONE</li>
+                  <li>DATA DE NASCIMENTO</li>
+                  <li>E-MAIL(Caso o cliente não queira informar cadastrar: informar o email da loja)</li><hr>
+
+                  <p>OBS2.: Caso o cliente não queira realizar o cadastro, utilizar o CPF PADRÃO: 123.456.789-09 -CLIENTE MARIA FILÓ</p>
+                </ul>
+            </li><hr>
+            <img src="imagens/linxpos-cadastro-cliente.jpg" class="img-responsive"><hr>
+            <li>Bipar ou digitar o produto a ser inserido na venda.</li><hr>
+            <img src="imagens/linxpos-produto-troca.jpg" class="img-responsive"><hr>
+            <li>Após incluir o primeiro produto, Será necessário incluir o número da boleta na venda, digitar o número do ticket, para as lojas que não possuem boleta o sistema ira gerar o código do ticket automaticamente.</li>
+            <img src="imagens/linxpos-ticket.jpg" class="img-responsive">
+            <li>
+              Selecionar a Forma de Pagamento, selecionando PAGAMENTO (F3)<hr>
+              <img src="#" class="img-responsive">
+              <p>OBS.: Existem diversas formas de pagamento: DINHEIRO, CARTÃO DE CRÉDITO E DÉBITO POS e TEF, CHEQUES. SEMPRE que selecionarem uma forma de pagamento OBSERVAR OS DADOS A SEREM PREENCHIDOS.</p>
+              <p>No Caso da utilização do TEF (Cartão de Crédito ou Débito PDV), as informações serão preenchidas automaticamente.</p>
+                <ul>
+                  <li>DINHEIRO (VALOR PAGO)</li>
+                  <li>CHEQUE (BANCO, CONTA, NUMERO DO CHEQUE..ETC)</li>
+                  <li>CARTÃO DE CRÉDITO OU DÉBITO POS (BANDEIRA, PARCELAS, TÍTULO e APROVAÇÃO)</li>
+                </ul>
+              <p>OBS.: OS CARTÕES REDESHOP E MAESTRO DEVERÃO SER SELECIONADOS COMO “REDESHOP”</p>
+            </li>
+            <li>
+              Selecionar FINALIZAR (F2) para concluir a Venda e ser impresso o CUPOM DO CLIENTE.
+            </li>
+          </ol>
+          <h3>Vendas com Desconto</h3>
+          <img src="#" class="img-responsive">
+          <p>Existem 3 formas de o desconto ser realizado:</p>
+          <ul>
+            <li>Porcentagem - informa-se o valor percentual que deve ser abatido do valor do item. O sistema calcula automaticamente o desconto em reais e o valor total do produto após o desconto;
+            </li>
+            <li>
+            Desconto - informa-se em reais o valor a abater do total do item. O sistema informa o percentual de desconto que está sendo abatido e o valor total do produto após o desconto;</li>
+            <li>
+            Preço final do produto - informa-se o valor total do produto após o desconto. O sistema informa o percentual de desconto oferecido no item e o valor do desconto em reais.</li>
+            </li>
+          </ul>
+          <h3>Desconto no item</h3> 
+          <ol>
+            <li>Na tela de vendas, preencha o vendedor e o cliente.</li>
+            <li>Clique na opção Preços (F9).</li>
+            <img src="imagens/linxpos-precos.jpg" class="img-responsive">
+            <li>Insira o produto para a venda.</li>
+            <li>Posicione o cursor sobre o item desejado e clique em Desconto. Será apresentada a tela padrão de descontos.</li>
+            <li>Selecione a opção Desconto e informe o valor desejado de desconto na venda.</li>
+            <li>Clique no botão OK para confirmar o desconto.</li>
+            <img src="#" class="img-responsive">
+            <li>Clicar no botão Adicionar à Venda para inserir o Produto já com o Desconto aplicado na tela de venda.</li>
+            <img src="#" class="img-responsive">
+          </ol>
+          <h3>Desconto na Tela de Venda</h3>
+          <img src="#" class="img-responsive">
+          <h3>Desconto na Tela de Pagamento</h3>
+          <img src="#" class="img-responsive">
+          <h3>Venda Com Tipo de Venda</h3>
+            <p>O Marketing da Empresa disponibiliza algumas Campanhas e Parcerias Promocionais, onde são aplicados os Descontos, segue alguns exemplos:</p>
+              <ul>
+                <li>Cliente VIP</li>
+                <li>Aniversariantes</li>
+                <li>Passaporte</li>
+                <li>Empresas parceiras</li>
+                <li>Funcionários</li>
+                <li>Campanhas</li>
+              </ul>
+                  <p>OBS.: Cada Tipo de Venda é permitido aplicar um Limite de Desconto, caso possuam alguma dúvida, entrar em contato com o Marketing para maiores esclarecimentos.</p>
+           <ol>
+             <li>Na Tela de Vendas deverá selecionar a Vendedora</li>
+             <img src="#" class="img-responsive">
+             <li>Clicar em Tipo de Venda e Selecionar a Operação de Venda desejada.</li>
+             <img src="#" class="img-responsive">
+            </ol>   
+            <h3>Trocas</h3>
+              <p>Por meio do LinxPOS são possíveis dois tipos de operações de troca:</p>
+                <ul>
+                  <li>Troca por produto de igual valor TROCA ZERADA é quando o cliente deseja trocar o produto por um tamanho diferente, cor diferente ou outro produto que seja do mesmo valor.</li>
+                  <li>Troca por produto de valor superior TROCA COM DIFERENÇA  é quando o cliente realiza a troca de alguma mercadoria que ultrapasse o valor do produto devolvido/trocado, gerando uma diferença financeira para o cliente pagar.</li>
+                </ul>
+                <h4>Troca Zerada</h4>
+                <ol>
+                  <li>Na Tela de Venda, selecionar o Vendedor e Inserir o Cliente.</li>
+                  <img src="#" class="img-responsive">
+                  <li>Clicar no Botão de TROCA, onde o mesmo ficará com a Cor Vermelha.</li>
+                  <img src="#" class="img-responsive">
+                  <li>BIPAR ou DIGITAR o produto a ser devolvido para a Loja, lembrando que deverá incluir o Número da Boleta.</li>
+                  <img src="#" class="img-responsive">
+                  <li>Selecionar novamente o Botão de TROCA (para poder inserir o Produto que a cliente está levando). BIPAR ou DIGITAR o          Produto       que a cliente está levando.</li>
+                  <img src="#" class="img-responsive">
+                  <li>A ÙNICA FORMA DE PAGAMENTO que será aceita pelo sistema no caso de uma TROCA ZERADA é DINHEIRO.
+                      Selecionar DINHEIRO e FINALIZAR (F2) a Troca.</li>
+                  <img src="#" class="img-responsive">
+                  <li>A cada troca efetuada na loja, é necessário emitir uma nota de entrada dos produtos que estão sendo devolvidos para concluir fiscalmente a operação. Será Exibida a Tela (Espelho da Nota Fiscal a Ser gerada), onde será necessário o Preenchimento do Campo VOLUME e clicar em OK, enviando a mesma para a SEFAZ autorizar.</li>
+                  <img src="#" class="img-responsive">
+                  <li>Ao Finalizar a Venda, Será Gerado o RELATÓRIO de TROCA, sendo impresso em 2 Vias, preencher corretamente e enviar junto com o Malote de Fechamento de Caixa.</li>
+                </ol>
+                <h4>Troca com Diferença</h4>
+                <ol>
+                  <li>Na tela de Vendas do LinxPOS, informe o vendedor e o cliente que realizará a troca de mercadoria.</li>
+                  <li>Clique no botão Troca, para informar o produto que está retornando à loja. Nesta operação, os dados do produto que retornam à loja aparecerão em vermelho na tela.</li>
+                  <li>Informe o produto (de valor superior) que será devolvido pelo cliente. No campo Total, localizado no rodapé da tela, será exibido um saldo a ser pago pelo cliente.</li>
+                  <li>Para finalizar a troca, clique no botão Pagamento, selecione a forma de pagamento e encerre a troca.</li>
+                  <li>Deve ser emitida uma nota fiscal do produto devolvido para complementar a operação fiscal.</li>
+                  <img src="#" class="img-responsive">
+                </ol>
+                <h3>Devolução</h3>
+                <p>
+                  Nos casos de devolução, existem apenas os produtos que estão sendo devolvidos pelo cliente. Toda e Qualquer Devolução se torna obrigatório o contato com o Financeiro da Empresa para obter a autorização e assim efetuar essa operação.
+                </p>
+                <ol>
+                  <li>Na tela de Vendas do LinxPOS, informe o vendedor e o cliente que realizará a devolução de mercadoria.</li>
+                  <img src="#" class="img-responsive">
+                  <li>Clique no botão Troca e informe os produtos a serem devolvidos.</li>
+                  <img src="#" class="img-responsive">
+                  <li>Clique no botão Pagamento (F3) e selecione o tipo de reembolso (dinheiro).</li>
+                  <li>Clique no botão Finalizar (F2)</li>
+                  <li>Uma nota fiscal do produto que foi devolvido deve ser emitida para complementar a operação fiscal. Inserir o Volume devolvido e clicar em Ok</li>
+                  <img src="#" class="img-responsive">
+                </ol>
+                <h3>Cancelamento de Vendas</h3>
+                <p>Há três principais situações em que é necessário efetuar o cancelamento:</p>
+                  <ul>
+                    <li>Quando a venda ainda não foi concluída e o cliente desistiu da compra;</li>
+                    <li>Quando o cliente decidiu por cancelar um item que já foi incluído na lista de produtos da venda;</li>
+                    <li>Quando a venda já foi concluída e o cliente desistiu da compra.</li>
+                  </ul>
+                <h4>Cancelamento da venda ainda não concluída</h4>
+                <p>Para efetuar o cancelamento de uma venda não concluída, realize os passos a seguir:</p>
+                <ol>
+                  <li> Na tela de Vendas, o cliente decide não efetuar mais a compra. É necessário então cancelar a venda. Clique no botão Cancelar (F7).</li>
+                  <li>Informe o motivo do cancelamento da venda e clique em Ok.</li>
+                  <li>Informe a senha do Gerente e clique em Ok.</li>
+                  <li>A venda será cancelada, retornando para a tela de venda do LinxPOS.</li>
+                </ol>
+                <h4>Cancelamento de um item da venda</h4>
+                <p>Para efetuar o cancelamento, realize os passos a seguir:</p>
+                <ol>
+                  <li>Na tela de Vendas, Clique no botão do item a ser excluído.</li>
+                  <li>Informe a senha do gerente e clique em Ok.</li>
+                  <li>O item foi excluído da lista de itens da venda. Continue os procedimentos para conclusão da venda dos itens restantes.</li>
+                  <li>Clique no botão Pagamento (F3).</li>
+                  <li>Na lista de Formas de pagamento, selecione a opção desejada.</li>
+                  <li>Clique no botão Finalizar (F2) para concluir a venda.</li>
+                </ol>
+                <h4>Cancelamento da venda concluída</h4>
+                <p>Para efetuar o cancelamento de uma venda concluída, realize os passos destacados seguir:</p>
+                <ol>
+                  <li>Na tela de vendas, clique no botão Tickets (F4) para pesquisar a venda efetuada e realizar o respectivo cancelamento.</li>
+                  <li>Selecione o ticket referente a venda e clique no botão Ok. Os dados da venda são exibidos na tela.</li>
+                  <li>Clique no botão Cancelar (F7) e confirme o cancelamento na tela apresentada.</li>
+                  <li>Informe o motivo do cancelamento da venda e clique em Ok.</li>
+                  <li>Informe a senha do gerente e clique em Ok.</li>
+                  <li>A venda será cancelada, retornando para a tela de venda do LinxPOS.</li>
+                </ol>
+                
+          <div align="right">
+            <a class="btn btn-primary btn-lg" href="#top" role="button"> 
+            <span class="glyphicon glyphicon-arrow-up"> Topo</span>
+            </a>
+          </div>
+          <hr>
+        </div>
+    
+
+        <!-- aba caixa -->
+        <div class="tab-pane" role="tabpanel" id="caixa">
+          <h3>Caixa</h3>
+          <p>Abertura de Caixa no LinxPOS</p><hr>
+            <ol>
+                <li>Selecionar <strong>CAIXA</strong> no menu principal</li>
+                <img src="imagens/linxpos-menu.jpg" class="img-responsive">
+                <li>Para acessar o módulo será necessário informar o <strong>OPERADOR</strong> e a <strong>SENHA</strong> para validar o acesso.</li>
+                <img src="imagens/linxpos-login.jpg" class="img-responsive">
+                <li>Selecionar o móduko <strong>GERENCIAMENTO DE CAIXA</strong></li>
+                <img src="#">
+                <li>Será exibida a tela de GERENCIAMENTO DE CAIXA onde será informado o STATUS ATUAL: <strong>CAIXA FECHADO</strong> <br>Clique no botão INICIAR para iniciar o periodo e alterar o STATUS ATUAL para <strong>CAIXA ABERTO</strong> </li>
+                <img src="imagens/linxpos-caixa-fechado.jpg" class="img-responsive"><br>
+                <img src="imagens/linxpos-caixa-aberto.jpg" class="img-responsive">
+                <li>Após esse processo clique em SAIR (F11)</li>
+                <img src="imagens/linxpos-sair.jpg" class="img-responsive">
+              
+                <h4>
+                    OBS: Para as lojas que utilizam impressoras fiscais é necessário realizar o processo abaixo. Lojas que utlizam NFC-e, não devem realizar essa etapa, podem seguir para a tela de vendas.
+                </h4>
+             
+                <li>Efetuar a impressão da <strong>LEITURA X</strong> para realizar esse processo selecione o módulo <strong>GERENCIAMENTO FISCAL</strong>.</li>
+                <img src="imagens/linxpos-gerenciamento-fiscal.jpg" class="img-responsive">
+                <li>Na tela GERENCIAMENTO FISCAL, deverá clicar no botão <strong>EFETUAR LEITURA X</strong> iniciando a abertura da impressora fiscal para iniciar o periodo de vendas do dia.</li>
+                <img src="#">
+                <li>Selecionar <strong>INICIO</strong> para sair da tela de gerenciamento fiscal.</li>
+                <img src="#">
+                <li>Selecionar Sair(F11) para retornar ao menu principal.</li>
+                <img src="imagens/linxpos-sair.jpg" class="img-responsive">
+              </ol>
+          <h3>Conferência de Caixa</h3>
+          <p>Na tela de Gerenciamento do caixa são realizadas diversas consultas e conferências do caixa, além da impressão dos resumos de vendas da loja.</p>
+            <ol>
+              <li>Somente será possível realizar a conferência do dia, caso deseje verificar por período, acessar as telas do <a href="linxmanager.html"> LinxPOS Manager.</a></li>
+              <img src="imagens/linxpos-caixa-aberto.jpg" class="img-responsive">
+                <ul>
+                  <li>PERÍODO <br>Todos os períodos: esta opção apresenta nas abas de consulta informações de todos os períodos do caixa. O período atual é apresentado na parte superior da tela. Este tipo de consulta é utulizada para as empresas que trabalham com mais de um turno nas lojas, como por exemplo: um operador de caixa pela manhã, outro à tarde e outro a noite.<br>Somente o período: esta opção apresenta nas abas de consulta informações apenas do períodos aberto do caixa.
+                  </li><hr>
+                  <li>OPERADOR <br>Todos os operadores: esta opção apresenta nas abas de consulta informações referentes a todos os operadores do período selecionado.<br>Somente o operador: apresenta nas abas de consulta informações referentes ao operador selecionado.
+                  </li>
+                </ul>              
+              <li>
+                Configurados os filtros, clique no botão <strong>PESQUISAR (F3)</strong> e consulte as abas disponíveis na área central da tela.<hr>
+                <table class="table table-striped table-bordered table-hover">
+                <tbody>
+                  <tr>
+                    <td>Saldo do caixa </td>
+                    <td>Apresenta os valores finais das modalidades de pagamento e movimentações de caixa.</td>
+                  </tr>
+                  <tr>
+                    <td>Resumo de vendas </td>
+                    <td>Apresenta o valor bruto, descontos e valores líquidos das vendas.</td>
+                  </tr>
+                  <tr>
+                    <th>Movimentação de Caixa </th>
+                    <th>Apresenta os lançamentos de caixa. O botão Detalhes apresenta o registro de caixa com todas as informações cadastradas no momento do lançamento.</th>
+                  </tr>
+                  <tr>
+                    <td>Tipos de Pagamento</td>
+                    <td>Nesta aba é possível conferir os valores do caixa com o sistema. Se necessário, pode ser acionado o botão Detalhes, para conferência lançamento a lançamento.</td>
+                  </tr>
+                  <tr>
+                    <th>Notas Fiscais </th>
+                    <th>Apresenta os detalhes das Notas Fiscais emitidas, como natureza, código de operação, impostos agregados e totais por nota.</th>
+                  </tr>
+                  <tr>
+                    <td>Redução Z</td>
+                    <td>Apresenta um resumo do relatório emitido, totalizando por venda líquida, valor total e valor contábil.</td>
+                  </tr>
+                  <tr>
+                    <th>Relatórios </th>
+                    <th>Nesta aba é possível emitir os relatórios Comparativo com a Redução Z e Resumos do Caixa.
+                        O Resumo de Caixa exibe informações do movimento da loja, totalizando valores por Tipo de Venda, Formas de Pagamento, Tipo de Pagamento, Vendedores e outras informações úteis para o gerenciamento da loja.
+                        Esta impressão pode ser configurada, trazendo informações selecionadas na tela. Este procedimento é feito por meio dos filtros disponíveis: Lista cheques e cartões, Inventário, Vendedores, Lista cupons fiscais, etc.
+                        Os resultados poderão ser visualizados de maneiras diferentes.
+                <ul>
+                  <li>Janela de Visualização (Preview): o resultado será exibido na tela.</li>
+                  <li>Impressora: realizará a impressão em uma impressora convencional.</li>
+                  <li>ECF: imprimirá o relatório gerencial na impressora fiscal.</li>
+                </ul>
+                        </th>
+                  </tr>
+                </tbody>
+                </table>
+                
+              </li><br>
+              <li>Clique no botão Sair para voltar ao menu principal.</li>
+            </ol>
+          <h3>Fechamento de Caixa</h3>
+          <p>
+            O fechamento do caixa encerra as atividades do dia, no período atual do terminal em operação. Este procedimento deve ser feito com atenção, pois não pode ser retornado ou cancelado.
+          </p>
+          <h4>Para efetuar o fechamento do caixa, realize os passos a seguir:</h4>
+          <ol>
+            <li>Selecionar <strong>CAIXA</strong> no menu principal</li>
+                <img src="imagens/linxpos-menu.jpg" class="img-responsive">
+                <li>Para acessar o módulo será necessário informar o <strong>OPERADOR</strong> e a <strong>SENHA</strong> para validar o acesso.</li>
+                <img src="imagens/linxpos-login.jpg" class="img-responsive">
+                <li>Selecionar o móduko <strong>GERENCIAMENTO DE CAIXA</strong></li>
+                <img src="#">
+                <li>Será exibida a tela de GERENCIAMENTO DE CAIXA onde será informado o STATUS ATUAL: <strong>CAIXA ABERTO</strong> <br>Clique no botão FINALIZAR para encerrar o periodo e alterar o STATUS ATUAL para <strong>CAIXA FECHADO</strong> </li>
+                <img src="imagens/linxpos-caixa-fechado.jpg" class="img-responsive"><br>
+                  <li>Após esse processo clique em SAIR (F11)</li>
+                <img src="imagens/linxpos-sair.jpg" class="img-responsive">
+
+                  <h4>
+                    OBS: Para as lojas que utilizam impressoras fiscais é necessário realizar o processo abaixo. Lojas que utlizam NFC-e, não devem realizar essa etapa, podem seguir para a tela de vendas.
+                  </h4>
+
+                <li>Efetuar a impressão da <strong>REDUÇÃO Z</strong> para realizar esse processo selecione o módulo <strong>GERENCIAMENTO FISCAL</strong>.</li>
+                <img src="imagens/linxpos-gerenciamento-fiscal.jpg" class="img-responsive">
+                <li>Na tela GERENCIAMENTO FISCAL, deverá clicar no botão <strong>EFETUAR REDUÇÃO Z</strong> encerrando a impressora fiscal fechando o período de vendas do dia.</li>
+                <img src="#" class="img-responsive">
+                <li>Selecionar <strong>INICIO</strong> para sair da tela de gerenciamento fiscal.</li>
+                <img src="#" class="img-responsive">
+                <li>Selecionar Sair(F11) para retornar ao menu principal.</li>
+                <img src="imagens/linxpos-sair.jpg" class="img-responsive">
+          </ol>
+          <div align="right">
+            <a class="btn btn-primary btn-lg" href="#top" role="button"> 
+            <span class="glyphicon glyphicon-arrow-up"> Topo</span>
+            </a>
+          </div>
+          <hr>
+        </div>
+
+        <!-- aba consultas -->
+        <div class="tab-pane" role="tabpanel" id="consultas">
+          <h3>Consultas</h3>
+            <img src="imagens/construcao.png" class="img-responsive">
+            <div align="right">
+            <a class="btn btn-primary btn-lg" href="#top" role="button"> 
+            <span class="glyphicon glyphicon-arrow-up"> Topo</span>
+            </a>
+          </div>
+          <hr>
+        </div>
+        
+        <!-- aba configuracoes -->
+        <div class="tab-pane" role="tabpanel" id="configuracoes">
+          <h3>Configurações</h3>
+          <img src="imagens/construcao.png" class="img-responsive">
+          <div align="right">
+            <a class="btn btn-primary btn-lg" href="#top" role="button"> 
+            <span class="glyphicon glyphicon-arrow-up"> Topo</span>
+            </a>
+          </div>
+          <hr>
+        </div>
+      </div>      
+   	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Manuais Maria Filó - Portal de informações TI</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- Barra navegação -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        
+        <div class="navbar-header">
+          <!-- Butão da barra de navegação -->
+          <button type="button" class="navbar-toggle collapsed" 
+                  data-toggle="collapse" data-target="#barra-navegacao">
+            <span class="sr-only">Alternar Menu</span>
+            <span class="glyphicon glyphicon-th-list"></span>
+          </button>
+          <a href="index.html" class="navbar-brand"><span class="img-logo">Manuais Maria Filó</span></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="barra-navegacao">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li> <a href="index.html">Principal</a> </li>
+            <li> <a href="linxpos.html">LinxPOS</a> </li>
+            <li> <a href="linxmanager.html">LinxPOS Manager</a> </li>
+            <li> <a href="mide.html">Mid-e Client</a> </li>
+            <li> <a href="sitefweb.html">Sitefweb</a> </li>
+            <li> <a href="suporte.html">Suporte</a> </li>
+
+            <li class="dropdown"> 
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Minha Conta <span class="caret"></span>
+              </a> 
+              <ul class="dropdown-menu">
+                <li> <a href="#">Editar</a> </li>
+                <li> <a href="#">Logout</a> </li>
+              </ul>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+    
+   	<div class="container">
+
+   		<div class="page-header" id="area-principal">
+   			<h1>Sitefweb</h1>
+   		</div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h3>Acessando o Sitefweb</h3><hr>
+            <p> Para acessar o Sitefweb, entre no endereço <a href="http://10.1.8.25/sitefweb">http://10.1.8.25/sitefweb</a><br>
+                Em seguida preencha a tela com os dados de acesso que forma disponipilizados para cada loja.<br></p>
+                <img src="imagens/sitefweb-login.jpg" class="img-centralizado"><br>
+          <h3>Verificação de Vendas</h3><hr>
+            <p>Para verificar as vendas acesse a opção RELATÓRIOS, em seguida TRANSAÇÕES. Caso o acesso seja referenta a impressão do RESUMO DE MOVIMENTO siga para RESUMO MOVIMENTO.</p>
+              <img src="imagens/sitefweb-menu1.jpg">
+            <p>Selecione o período desejado e a loja desejada (caso possua mais de uma loja ambas aparecerão na relação de lojas). na   parte inferior da tela está o botão para <strong>LISTAR</strong> a consulta realizada.<br> Caso seja necessário cancelar a ação utilize o botão <strong>VOLTAR AO MENU</strong> no canto inferior esquerdo.</p>
+              <img src="imagens/sitefweb-transacoes1.jpg" class="img-ajustada"><br>
+            <p>Após a consulta na tela de TRANSAÇÕES o relatório deverá se apresentar da seguinte forma:</p>
+              <img src="imagens/sitefweb-relatorios.jpg" class="img-ajustada"><br>
+              <p>Existe a possibilidade de ordenar as transações de forma que fique mais fácil a visualização clicando com o botão direito na coluna desejada.</p>
+                <h4>Ordenado pela coluna <strong>NSU</strong> </h4><img src="imagens/sitefweb-ordenar1.jpg" class="img-ajustada">
+                <h4>Ordenado pela coluna <strong>TRANSAÇÕES</strong> </h4><img src="imagens/sitefweb-ordenar.jpg" class="img-ajustada">
+              <p>Nas colunas REDE e ESTADO TRANSAÇÃO é possível visualizar qual é o autorizador da transação em questão e o status da transação (se foi aprovada ou não).</p>
+                <img src="imagens/sitefweb-rede-estado.jpg" class="img-ajustada"><br>
+              <p>A coluna NSU mostra o número referente a transação e a coluna NSU_HOST é utilizada para<a href="#"> reimprimir o comprovantes</a></p><br>
+                <img src="imagens/sitefweb-relatorios1.jpg" class="img-ajustada">
+              <p>Na parte inferior da tela de relatórios são exibidos os totalizadores das transações, nessa parte é possível verificar a quantidades de transações e o valor que essas transações representam.</p>
+          <h3>Analisando a tela de relatório RESUMO MOVIMENTO:</h3><hr>
+            <p> Atraves da tela de relatório é possível fazer a impressão das transações ou exportar as transações para uma planilha do Excel (.csv).</p>
+            <img src="imagens/sitefweb-resumo1.jpg" class="img-ajustada">
+          <h3>Manutenção de Pendências</h3>
+            <p>Algumas vendas podem ficar com o status diferente de aprovada ou negada, são as vendas pendentes. Essas devem ser aprovadas. (aparecem em vermelho no relatório).</p>
+              <img src="imagens/sitefweb-pendente.jpg">
+            <p>Para realizar a aprovação da transação PENDENTE deverá ser realizada a verificação do ticket e as informações de venda no LinxPOS antes de executar qualquer alteração no Sitefweb deve ser ralizado o passo a passo, para evitar a duplicidade de pagamentos e transtornos posteriores com os clientes.</p>
+            <p>Para acessar as opções de cancelamento ou aprovação da venda clique duas vezes sobre a transação pendente.</p>
+              <img src="imagens/sitefweb-confirmacao-transacao.jpg">
+            <p>Para confirmar a transação clique no botã CONFIRMATRN.</p>
+              <img src="imagens/sitefweb-confirmacao.jpg">
+            <p>A transação será considerada como EFETUADA depois da confirmação nas mensagem que irão aparecer.</p>
+              <img src="imagens/sitefweb-info.jpg">
+            <h3>Obs.: Caso seja preciso cancelar alguma venda pendente, basta clicar no botão CANCELATRN e confirmar as mensagens seguintes.</h3>
+            <p>Persistindo o problema entrar em contato com a LINX através do telefone: (11) 2103-1550.</p>
+            <p>A LINX solicitará através do telefone que seja enviado um e-mail com as informações da Transação Pendente, Sempre Copiar o T.I. (augusto.borges@mariafilo.com.br; joao.gabriel@mariafilo.com.br) e a Tesouraria (elisangela.santos@mariafilo.com.br; vanessa.farias@mariafilo.com.br ).</p>
+        </div>
+      </div>
+   	</div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

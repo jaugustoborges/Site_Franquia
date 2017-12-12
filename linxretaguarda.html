@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Manuais Maria Filó - Portal de informações TI</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- Barra navegação -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        
+        <div class="navbar-header">
+          <!-- Butão da barra de navegação -->
+          <button type="button" class="navbar-toggle collapsed" 
+                  data-toggle="collapse" data-target="#barra-navegacao">
+            <span class="sr-only">Alternar Menu</span>
+            <span class="glyphicon glyphicon-th-list"></span>
+          </button>
+          <a href="index.html" class="navbar-brand"><span class="img-logo">Manuais Maria Filó</span></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="barra-navegacao">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li> <a href="index.html">Início</a> </li>
+            <li> <a href="linxpos.html">LinxPOS</a> </li>
+            <li> <a href="linxmanager.html">LinxPOS Manager</a> </li>
+            <li> <a href="linxretaguarda.html">Linx ERP Retaguarda</a> </li>
+            <li> <a href="mide.html">Mid-e</a> </li>
+            <li> <a href="xml.html">XML</a> </li>
+            <li> <a href="suporte.html">Suporte</a> </li>
+
+            <!-- Opção de Login da pagina -->
+            <!--<li class="dropdown"> 
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Minha Conta <span class="caret"></span>
+              </a> 
+              <ul class="dropdown-menu">
+                <li> <a href="#">Editar</a> </li>
+                <li> <a href="#">Logout</a> </li>
+              </ul>
+
+            </li>-->
+
+
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+    
+   	<div class="container">
+
+   		<div class="page-header" id="area-principal">
+   			  <h1>Linx ERP Retaguarda</h1>
+        <p>
+          O LinxERP é um sistema de gestão empresarial totalmente integrado, que apresenta alto nível de aderência ao segmento do vestuário, com uma interface gráfica amigável e implantação otimizada. O sistema prevê todos os processos, desde o início da produção de uma confecção até o momento da venda dos artigos ao consumidor final, incluindo cada detalhe que compõe este ciclo.<br>
+        </p>
+      </div>
+            <!-- Criação das abas -->
+      <ul class="nav nav-pills nav-justified" role="tablist">
+      <!--<ul class="nav nav-pills" role="tablist">-->
+      <!--<ul class="nav nav-tabs nav-justified" role="tablist"> -->
+        <li class="active"><a href="#configuracoes" role="tab" data-toggle="tab">Configurações</a></li>
+        <li><a href="#gsuprimentos" role="tab" data-toggle="tab">Gestão de Suprimentos / Estoque</a></li>
+        <li><a href="#gvarejo" role="tab" data-toggle="tab">Gestão de Varejo</a></li>
+        <li><a href="#gfinanceira" role="tab" data-toggle="tab">Gestão Financeira</a></li>
+        <li><a href="#gfiscal" role="tab" data-toggle="tab">Gestão Fiscal</a></li>
+      </ul>
+
+      <!-- Conteúdo das abas -->
+      <div class="tab-content">
+
+        <!-- aba configuracoes -->
+        <div class="tab-pane active" role="tabpanel" id="configuracoes">
+          <h3>Cadastrar/Desativar Funcionários</h3>
+          <ol>
+            <li>
+              Acessar o linx, clique no seletor, selecione a opção: <strong>Configurações</strong> 
+            </li>
+            <img src="imagens/linxerp-configuracoes.jpg" class="img-responsive"><hr>
+            <li>
+              Na opção: <strong>Configurações De Lojas</strong> selecione a opção <strong>300006 Cadastro de Vendedores De Lojas</strong>
+            </li>
+              <img src="imagens/linxerp-configuracoes-lojas1.jpg" class="img-responsive"><hr>
+            <li>
+              O sistema abrirá a tela abaixo:
+            </li>
+              <img src="imagens/linxerp-configuracoes-lojas-incluir.jpg" class="img-responsive"><hr>
+            <li>
+              Para incluir um <strong>NOVO</strong> cadastro, clique no botão <strong>Incluir (F5)</strong>.<img src="imagens/linxerp-botao-incluir.jpg" class="img-responsive"><hr>
+            </li>
+                <img src="imagens/linxerp-configuracoes-lojas-incluir1.jpg" class="img-responsive"><hr>
+              <p>
+                 Nessa tela os campos necessários para cadastro de funcionários são:   
+              </p>
+              <ol>
+                <ul><strong>Vendedor</strong> - Não pode ser alterado apos a criação do cadastro.</ul>
+                <ul><strong>Filial</strong> - Clique com o botão direito e selecione a filial correspondente.</ul>
+                <ul><strong>Apelido</strong> -  Pode ser alterado! Será o apelido que constará na lista de vendedores do LinxPOS.</ul>
+                <ul><strong>CPF</strong> - Dever sempre ser preeenchiodo um CPF válido.</ul>
+                <ul><strong>Cidade</strong></ul>
+                <ul><strong>UF</strong></ul>
+                <ul><strong>Cargo</strong> Ex: VENDEDOR / GERENTE</ul>
+                <p>
+                  Após inserir todas as informações, clique no botão <strong>Salvar</strong>.<img src="imagens/LinxERP-botao-salvar.jpg" class="img-responsive">
+                </p><hr>
+                <img src="imagens/linxerp-configuracoes-lojas-salvar1.jpg" class="img-responsive">
+              </ol>
+              <li>
+                Para desativar um cadastro de funcionária é necessário apenas inserir o código do funcionario e clicar em <strong>alterar</strong> em seguida preencher o campo <strong>Desativação</strong>  com a data correspondente e clicar na opção <strong>Salvar</strong>.
+              </li><hr>
+                <img src="imagens/linxerp-configuracoes-lojas-desativar.jpg" class="img-responsive">
+             <h3>
+                    <strong>OBS:</strong> <strong>NUNCA</strong> excluir um cadastro de funcionário! Caso a funcionária for desligada da loja, apenas preencha o campo <strong>Desativação</strong> com a data correspondente.
+              </h3>
+              <hr>
+              <div align="right">
+            <a class="btn btn-primary btn-lg" href="#top" role="button"> 
+            <span class="glyphicon glyphicon-arrow-up"> Topo</span>
+            </a>
+          </div>
+              <hr>
+        </div>
+    
+
+        <!-- aba gestao de suprimentos  -->
+        <div class="tab-pane" role="tabpanel" id="gsuprimentos">
+          <!-- Procedimentos de saídas proprietarios/funcioanrios  -->
+          <h3>Saídas Proprietários/Funcionários</h3>
+            <p>Esse manual tem o intuito de mostrar a saída das retiradas para uniformes e peças para os franqueados.</p>
+              <ul>
+                <li>Ir em Seletor <img src="imagens/linxerp-botao-seletor.jpg" class="img-responsive"></li>
+                <li>Gestão de Suprimentos/Estoque</li>
+                <li>Saídas de Mercadorias</li>
+                <li>Saída Física de Estoque</li>
+                <li>120003 Saída de Produto Acabado do Estoque</li>
+              </ul>
+              <hr>
+                <img src="imagens/linxerp-gsup1.jpg" class="img-responsive">
+              <hr>
+              <p>Irá abrir a tela 120003 – Saída de Produto Acabado do Estoque</p>
+              <img src="imagens/linxerp-gsup2.jpg" class="img-responsive">
+              <hr>
+              <p>Sempre que for realizar alguma inserção de informação no sistema, escolher a opção de <strong>Incluir</strong> <img src="imagens/linxerp-botao-incluir.jpg" class="img-responsive"></p>
+              <p>Ao incluir, escolher o Tipo de Saída:</p>
+                <ul>
+                  <li>Saída p/ Funcionários</li>
+                  <li>Saída p/ Proprietários</li>
+                </ul>
+                <p>Existem duas formas para inserir a informação do produto que está saindo do estoque:</p>
+                <ol>
+                  <li>Na aba de Manutenção de Produtos e ir na inserção de produtos manualmente, vide print abaixo:</li>
+                  <img src="imagens/linxerp-gsup3.jpg" class="img-responsive">
+                  <hr>
+                  <p>Nessa opção, informar a Referência base do produto xx.xx.xxxx, cor xxx e o tamanho que está saindo</p>
+                  <li>Ir na aba de Código de Barras e bipar o código de barras do produto que está saindo do estoque</li>
+                  <img src="imagens/linxerp-gsup4.jpg" class="img-responsive">
+                  <hr>
+                  <p>Feito o tipo de saída desejado, basta clicar em <strong>Salvar</strong> <img src="imagens/linxerp-botao-salvar.jpg" class="img-responsive"> </p>
+                </ol>
+                <hr>
+          <!-- Procedimentos Inventario  -->
+          <h3>Inventário</h3>
+            <p>Para ter um estoque correto e com o mínimo de erros e peças negativas, o correto é realizar o inventário a cada troca de coleção, esse é o melhor período, visto que o estoque está bem baixo.</p>
+              <ul>
+                <li>Ir em Seletor <img src="imagens/linxerp-botao-seletor.jpg" class="img-responsive"></li>
+                <li>Controle De Estoque</li>
+                <li>Inventário De Estoque</li>
+                <li>005015 Contagem Física De Produto Acabado</li>
+              </ul>
+              <hr>
+              <img src="imagens/linxerp-gsup5.jpg" class="img-responsive">
+              <hr>
+              <p>Como informado anteriormente, sempre que for inserir uma informação no sistema, ir em <strong>Incluir</strong> <img src="imagens/linxerp-botao-incluir.jpg" class="img-responsive"></p>
+              <img src="imagens/linxerp-gsup6.jpg" class="img-responsive">
+              <hr>
+              <p>
+                Informar o nome da Contagem e caso tenha mais de uma filial, escolher a filial desejada. Ir na aba Selecionar Itens e seguir as seguintes informações:<br> Informar a data da contagem, lembrando que a informação é <strong>Contagem no Início do Dia</strong>, favor ter atenção à essa data. Marcar a opção <em>Inclui Itens Inativos</em> e após clicar no botão <strong>Incluir Itens na Contagem – Manual.</strong><br> Após, marcar a opção Usar saldo do dia anterior ao do dia da contagem e clicar em <strong>Trazer o Saldo do Estoque dos Produtos.</strong> Após, escolher o arquivo da contagem  ... e  <strong>Importar Contagem.</strong>
+              </p>
+              <hr>
+              <img src="imagens/linxerp-gsup7.jpg" class="img-responsive">
+              <p>Terminando a inserção das informações e arquivo de contagem, ir na próxima aba  <em>Complementos/Ajustes</em></p>
+              <img src="imagens/linxerp-gsup8.jpg" class="img-responsive">
+              <hr>
+              <p>
+                Nessa tela teremos a informação total de Contagem, Saldo de Estoque e Diferença, quando houver.<br>Basta clicar em Salvar <img src="imagens/linxerp-botao-salvar.jpg" class="img-responsive"> que o sistema irá informar a divergência de todos os produtos. Depois será necessário verificar as divergências e apurar o que pode ter acontecido.<br>Apurado todas as divergências, tratar o arquivo de contagem, se necessário criar uma cópia e mexer na cópia, mantendo o arquivo original da contagem intacto e refazer o processo afim de manter a contagem de acordo com o saldo.<br>Todo os saldos e estoque corrigido, clicar em <strong>Ajustar Estoque com as Diferenças de Contagem</strong>. Ao realizar esse processo, o estoque irá ajustar de acordo com a contagem realizada.
+              </p>
+              <!-- Procedimentos Consulta de Estoque/Notas de Origem  -->
+              <h3>Consulta de Estoque/Notas de Origem</h3>
+                <p>Esta opção visa obter melhor detalhe de estoque, como toda a movimentação do produto e nota fiscal de origem dos produtos.</p>
+                <ul>
+                  <li>Ir em Seletor <img src="imagens/linxerp-botao-seletor.jpg" class="img-responsive"></li>
+                  <li>Controle De Estoque</li>
+                  <li>Consultas De Estoque </li>
+                  <li>120007 Consulta De Estoque Por Cor E Filial</li>
+              </ul>
+              <hr>
+              <img src="imagens/linxerp-gsup9.jpg" class="img-responsive">
+              <hr>
+              <img src="imagens/linxerp-gsup10.jpg" class="img-responsive">
+              <hr>
+              <p>Inserir o código do produto e ir na opção <strong>Pesquisar</strong> <img src="imagens/linxerp-botao-pesquisar.jpg" class="img-responsive"> </p>
+              <p>Realizado a pesquisa, ir na aba <em>Extrato</em>.</p>
+                <img src="imagens/linxerp-gsup11.jpg" class="img-responsive">
+              <p>
+                Na aba Extrato, teremos toda a movimentação do produto em questão, inclusive notas de origem e vendas.<br>Essa tela mostra toda a movimentação e saldo do produto, mostra também o custo do produto.
+              </p>
+                <img src="imagens/linxerp-gsup12.jpg" class="img-responsive">
+              <p>Os tamanhos em<strong>Vermelho</strong>  mostram a movimentação, em <strong>Azul</strong>, o saldo após a movimentação.<br>Geralmente a primeira linha é a informação da entrada do produto ou nota fiscal de origem.
+              </p>
+              <img src="imagens/linxerp-gsup13.jpg" class="img-responsive">
+              <p>Nota fiscal 171215 emitida em 18/11/2017</p>
+              <div align="right">
+            <a class="btn btn-primary btn-lg" href="#top" role="button"> 
+            <span class="glyphicon glyphicon-arrow-up"> Topo</span>
+            </a>
+          </div>
+              <hr>
+        </div>
+
+        <!-- aba gestao de varejo -->
+        <div class="tab-pane" role="tabpanel" id="gvarejo">
+          <!-- Consulta/Alteração de Clientes Varejo -->
+          <h3>Consulta/Alteração de Clientes Varejo</h3>
+            <p>Esta tela serve somente para alteração no cadastro de clientes cadastrados na loja</p>
+              <ul>
+                  <li>Ir em Seletor <img src="imagens/linxerp-botao-seletor.jpg" class="img-responsive"></li>
+                  <li>Gestão Varejo</li>
+                  <li>Clientes Varejo</li>
+                  <li>300005 Cadastros De Clientes Varejo</li>
+              </ul>
+            <img src="imagens/linxerp-gvarejo1.jpg" class="img-responsive">
+            <p><strong>OBS:</strong> O código de cadastro do cliente é o CPF do mesmo.<br>Irá abri a tela 300005</p>
+            <img src="imagens/linxerp-gvarejo2.jpg" class="img-responsive">
+            <p>Inserir o código do cliente e clicar em <strong>Pesquisar</strong> <img src="imagens/linxerp-botao-pesquisar.jpg" class="img-responsive"> <br> Após a pesquisa realizada, clicar em <strong>Alterar</strong> <img src="imagens/linxerp-botao-alterar.jpg" class="img-responsive"> e alterar as informações desejadas.<br>Feito isso, basta clicar em <strong>Salvar</strong> <img src="imagens/linxerp-botao-salvar.jpg" class="img-responsive"></p>
+            <!-- Consulta de Tickets -->
+            <h3>Consulta de Tickets</h3>
+              <p>Nessa tela, você pode consultar as vendas realizadas no LinxPOS.</p>
+                <ul>
+                  <li>Ir em Seletor <img src="imagens/linxerp-botao-seletor.jpg" class="img-responsive"></li>
+                  <li>Gestão Varejo</li>
+                  <li>Vendas Por Loja</li>
+                  <li>300027 Consulta Ticket De Loja</li>
+              </ul>
+              <img src="imagens/linxerp-gvarejo3.jpg" class="img-responsive">
+              <p>Irá abrir a seguinte tela:</p>
+              <img src="imagens/linxerp-gvarejo4.jpg" class="img-responsive">
+              <p>Basta inserir as seguintes informações:</p>
+                <ul>
+                    <li>Código da Filial</li>
+                    <li>Ticket</li>
+                    <li>Data da Venda</li>
+                </ul>
+              <p>Feito isso, basta clicar em Pesquisar <img src="imagens/linxerp-botao-pesquisar.jpg" class="img-responsive"> <br>Realizando essa pesquisa, você terá acesso à todas as informações do ticket pesquisado.</p>
+               <!-- Consulta de Venda por Data -->
+               <h3>Consulta de Venda por Data</h3>
+                <p>Nessa tela, é possível realizar pesquisa de toda a movimentação da Loja Saídas/Vendas como Markup, Custo Médio, Preço de Custo - Total e Preço de Venda - Total.</p>
+                <ul>
+                  <li>Ir em Seletor <img src="imagens/linxerp-botao-seletor.jpg" class="img-responsive"></li>
+                  <li>Gestão Varejo</li>
+                  <li>Vendas Por Loja</li>
+                  <li>Vendas Por Loja</li>
+                  <li>Resumo DeVendas Por Data E Filial</li>
+              </ul>
+              <img src="imagens/linxerp-gvarejo5.jpg" class="img-responsive">
+               <p>Irá abrir a seguinte tela:</p>
+              <img src="imagens/linxerp-gvarejo6.jpg" class="img-responsive">
+                <p>Ir em Filtros, no campo <strong>Faixa</strong> escolher a opção data e informar o período desejado.</p>
+              <img src="imagens/linxerp-gvarejo7.jpg" class="img-responsive">
+              <p>Após a inserção dos parâmetros, clicar em Pesquisar <img src="imagens/linxerp-botao-pesquisar.jpg" class="img-responsive"> </p>
+              <img src="imagens/linxerp-gvarejo8.jpg" class="img-responsive">
+              <p>Irá trazer as informações das vendas do período desejado.<br>Caso pretenda verificar as informações detalhadas acima. Ir na aba <em>Totais</em> </p>
+               <img src="imagens/linxerp-gvarejo9.jpg" class="img-responsive">
+               <p>Como informado, na aba <em>Totais</em> , teremos todas as informações.</p>
+
+                <!-- Produto Acabado -->
+               <h3>Produto Acabado</h3>
+                <p>Nessa tela, é possível termos todas as informações do cadastro do produto. Essa tela serve apenas para consulta.</p>
+                <ul>
+                  <li>Ir em Seletor <img src="imagens/linxerp-botao-seletor.jpg" class="img-responsive"></li>
+                  <li>Gestão Varejo</li>
+                  <li>Produtos/Estoques</li>
+                  <li>002006 Produtos Acabados</li>
+              </ul>
+              <img src="imagens/linxerp-gvarejo10.jpg" class="img-responsive">
+               <p>Irá abrir a seguinte tela:</p>
+              <img src="imagens/linxerp-gvarejo11.jpg" class="img-responsive">
+                <p>Basta inserir o código do Produto xx.xx.xxxx e clicar em Pesquisar <img src="imagens/linxerp-botao-pesquisar.jpg" class="img-responsive"><br> Após a pesquisa, o resultado obtido será assim:</p>
+              <img src="imagens/linxerp-gvarejo12.jpg" class="img-responsive">
+              <hr>
+              <div align="right">
+            <a class="btn btn-primary btn-lg" href="#top" role="button"> 
+            <span class="glyphicon glyphicon-arrow-up"> Topo</span>
+            </a>
+          </div>
+              <hr>
+        </div>
+        
+        <!-- aba gestao financeira -->
+        <div class="tab-pane" role="tabpanel" id="gfinanceira">
+          <h3>Alteração de Ticket</h3>
+          <p>
+            Essa opção tem por finalidade alterar informações de venda antes da integração do Caixa na Retaguarda, tais como número de parcelas, título e etc.
+          </p>
+              <ul>
+                  <li>Ir em Seletor <img src="imagens/linxerp-botao-seletor.jpg" class="img-responsive"></li>
+                  <li>Gestão Financeira</li>
+                  <li>Conferência E Integração De Lojas</li>
+                  <li>009077 Conferência E Integração De Venda De Loja</li>
+              </ul>
+              <img src="imagens/linxerp-gfin1.png" class="img-responsive"><hr>
+              <p>Irá abrir a seguinte tela:</p>
+              <img src="imagens/linxerp-gfin2.png" class="img-responsive">
+              <p>Clicar em <strong>Avançar</strong>.</p><hr>
+              <img src="imagens/linxerp-gfin3.png" class="img-responsive">
+              <p>Marcar na opção <strong>Alteração de tickets de loja específicos</strong> e clicar em <strong>Avançar</strong> novamente.</p><hr>
+              <img src="imagens/linxerp-gfin4.png" class="img-responsive">
+              <p>Informar número de ticket e data da venda e novamente clicar em <strong>Procurar</strong></p><hr>
+              <img src="imagens/linxerp-gfin5.png" class="img-responsive">
+              <p>Realizando a procura do ticket informado, alterar as informações necessárias e fechar a janela acima. Voltará a tela inicial e o botão <strong>Avançar</strong> estará disponível. Basta clico-lo</p><hr>
+              <img src="imagens/linxerp-gfin6.png" class="img-responsive"><!-- Revisar essa imagem -->
+              <p>Abrirá a tela:</p><hr>
+              <img src="imagens/linxerp-gfin7.png" class="img-responsive">
+              <p>Marcar somente a opção <em> Enviar valores para a contabilidade</em> e clicar no botão <strong>Concluir</strong>.</p><hr>
+          <hr>
+
+          <!-- Conferencia e integração do caixa -->
+          <h3>Conferência e Integração do Caixa</h3>
+          <p>
+            Nessa tela é confirmado as informações do fechamento de Caixa realizado na loja.
+          </p>
+              <ul>
+                  <li>Ir em Seletor <img src="imagens/linxerp-botao-seletor.jpg" class="img-responsive"></li>
+                  <li>Gestão Financeira</li>
+                  <li>Conferência E Integração De Lojas</li>
+                  <li>009077 Conferência E Integração De Venda De Loja</li>
+              </ul>
+              <img src="imagens/linxerp-gfin8.png" class="img-responsive">
+              <p>Irá abrir a seguinte tela:</p><hr>
+              <img src="imagens/linxerp-gfin9.png" class="img-responsive">
+              <p>Clicar em <strong>Avançar</strong>.</p><hr>
+              <img src="imagens/linxerp-gfin10.png" class="img-responsive">
+              <p>Marcar na opção <strong>Resumo de parcelas de lojas para conferência e atribuição de número de lote</strong> e clicar em <strong>Avançar</strong> novamente.</p><hr>
+              <p>Abrirá a tela:</p><hr>
+              <img src="imagens/linxerp-gfin11.png" class="img-responsive"><!-- Revisar essa imagem -->
+              <p>Marcar a opção <em> Conferêrencia de todos os tipos de pagamentos de venda</em> e clicar no botão <strong>Avançar</strong>.</p><hr>
+              <img src="imagens/linxerp-gfin12.png" class="img-responsive">
+              <p>Escolher o período e filial e novamente clicar <strong>Avançar</strong>.</p>
+              <img src="imagens/linxerp-gfin13.png" class="img-responsive">
+              <p>Nessa parte, é realizada a conferência da conferência. É necessário confirmar se realmente as informações correspondem, feito isso, clicar novamente em <strong>Avançar</strong>.</p><hr>
+              <img src="imagens/linxerp-gfin14.png" class="img-responsive">
+              <p>Marcar somente a opção <em>Enviar valores para a contabilidade</em> e clicar no botão <strong>Concluir</strong></p>
+            <div align="right">
+            <a class="btn btn-primary btn-lg" href="#top" role="button"> 
+            <span class="glyphicon glyphicon-arrow-up"> Topo</span>
+            </a>
+          </div>
+          <hr>
+        </div>
+
+           <!-- aba gestao fiscal -->
+        <div class="tab-pane" role="tabpanel" id="gfiscal">
+        <h3>Carta de Correção</h3>
+          <p>Esta opção tem por finalidade gerar a carta de correção das notas emitidas.</p>
+          <ul>
+                  <li>Ir em Seletor <img src="imagens/linxerp-botao-seletor.jpg" class="img-responsive"></li>
+                  <li>Gestão Fiscal</li>
+                  <li>009057 Carta De Correção</li>
+              </ul>
+          <img src="imagens/linxerp-gfiscal1.png" class="img-responsive"><hr>
+          <p>Irá abrir a seguinte tela:</p>
+            <img src="imagens/linxerp-gfiscal2.png" class="img-responsive"><hr>
+          <p>Selecione na barra de menu superior da tela a opção <strong>Incluir</strong> <img src="imagens/linxerp-botao-incluir.jpg" class="img-responsive"> irá habilitar a seguinte janela:</p>
+          <img src="imagens/linxerp-gfiscal3.png" class="img-responsive">
+          <p>Os campos necessários para o filtro são:</p>
+          <ol>
+            <li>Nota Fiscal</li>
+            <li>Emissão</li>
+            <li>Série NF</li>
+          </ol>
+          <p>Feito isso, clique em <strong>Avançar</strong>.</p>
+          <img src="imagens/linxerp-gfiscal4.png" class="img-responsive">
+          <p>Irá aparecer as seguintes informações, acesse a aba <em>Irregularidades</em> e clique no botão azul <strong>Incluir</strong> e em seguida, clique com o botão direito do mouse no campo <strong>Irregularidades</strong>, que aparecerá uma lista com as opções para gerar a carta de correção.</p>
+          <img src="imagens/linxerp-gfiscal5.png" class="img-responsive">
+          <p>Escolha a opção desejada, o exemplo usado foi a irregularidade de <strong>peso</strong>, ficará assim:</p>
+          <img src="imagens/linxerp-gfiscal6.png" class="img-responsive">
+          <p>Mudança na informação referente  ao peso, de <strong>0 kg </strong> para <strong>10 kg </strong><br>Alterado a informação desejada, clique em <strong>Salvar</strong> <img src="imagens/linxerp-botao-salvar.jpg" class="img-responsive"><br>Após salvar, clique no botão <strong>Envia CC-e</strong></p>
+          <img src="imagens/linxerp-gfiscal7.png" class="img-responsive">
+          <hr>
+          <div align="right">
+            <a class="btn btn-primary btn-lg" href="#top" role="button"> 
+            <span class="glyphicon glyphicon-arrow-up"> Topo</span>
+            </a>
+          </div>
+          <hr>
+        </div>
+      </div>      
+    </div>
+   		</div>
+      
+   	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

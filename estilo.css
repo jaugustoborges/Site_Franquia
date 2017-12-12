@@ -1,0 +1,143 @@
+/*Limpar formatações padrão*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f3f3f3;
+	/*---background: #edbbbb;---*/
+	}
+
+#navegacao {
+	background: #fff;
+	border-bottom: 1px solid #d8d8d8;
+	height: 45px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+#area {
+	width: 100%;
+	margin: 0 auto;
+	height: 100px;
+}
+
+#area-principal {
+	width: 100%;
+	margin: 100px auto 10px auto;
+}
+
+#menu-principal{
+	float: left;
+	width: 250px;
+	margin: 55px auto 10px auto;
+	background: gray;
+}
+
+#logo {
+	float: left;
+	margin-left: 10px;
+}
+
+#menu {
+	float: right;
+	padding: 10px 0;
+	margin-right: 10px;
+}
+
+#postado {
+	background: #fff;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+h2 {
+	color: #b9c941;
+}
+
+h4{
+	color:gray;
+	margin-top: 5px;
+}
+hr{
+	margin: 15px 15px;
+}
+
+/****************************************************
+***********************Formatação do menu***********/
+
+a {
+	text-decoration: none;
+	padding: 5px 10px;
+}
+/*Links não visitados*/
+a:link {
+	color: #838383;
+}
+*/
+/*Links vistados*/
+a:visited {
+	color: #838383;
+}
+
+/*Links hover*//*
+a:hover {
+	color: #fff;
+	background: #b9c941;
+	border-radius: 10px;
+}
+
+/*Links active*/
+a:active {
+	color: #535353;
+}
+
+*/
+/*********************Classes*******************/
+.verde {
+	color: #b9c941;
+}
+/*formatação dos contatos da pagina de suporte*/
+.contato {
+	border-left: 5px solid #d8d8d8;
+	padding-left: 5px;
+	display: block;
+	margin-top: 10px;
+}
+/*Formatação icone*/
+.img-logo {
+	height: 40px ;
+	width: 140px ;
+	display: block;
+	background: url('imagens/logo.png') no-repeat;
+	border:;
+	background-size: contain;
+	color: transparent;
+}
+/*Posicionamento do icone*/
+.navbar-brand {
+	padding: 0px 15px;
+}
+/*centralização das imagens do manual*/
+.img-centralizado{
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.img-ajustada{
+	width: 100%;
+}
+.img-borda{
+	/*definimos a largura do box*/
+	width:100%;
+	/* definimos a altura do box */
+	height:100%;
+	/* definimos a cor de fundo do box 
+	background-color:#666;*/
+	/* definimos o quão arredondado irá ficar nosso box */
+	border-radius: 10px;
+	}
