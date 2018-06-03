@@ -2,6 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -42,6 +43,7 @@
             <li> <a href="linxpos.html">LinxPOS</a> </li>
             <li> <a href="linxmanager.html">LinxPOS Manager</a> </li>
             <li> <a href="linxretaguarda.html">Linx ERP Retaguarda</a> </li>
+            <li> <a href="linxweb.html">LinxWeb</a> </li>
             <li> <a href="mide.html">Mid-e</a> </li>
             <li> <a href="xml.html">XML</a> </li>
             <li> <a href="suporte.html">Suporte</a> </li>
@@ -107,30 +109,62 @@
             <li>
               Para incluir um <strong>NOVO</strong> cadastro, clique no botão <strong>Incluir (F5)</strong>.<img src="imagens/linxerp-botao-incluir.jpg" class="img-responsive"><hr>
             </li>
-                <img src="imagens/linxerp-configuracoes-lojas-incluir1.jpg" class="img-responsive"><hr>
-              <p>
-                 Nessa tela os campos necessários para cadastro de funcionários são:   
-              </p>
+              <img src="imagens/linxerp-configuracoes-lojas-incluir1.jpg" class="img-responsive"><hr>
               <ol>
-                <ul><strong>Vendedor</strong> - Não pode ser alterado apos a criação do cadastro.</ul>
-                <ul><strong>Filial</strong> - Clique com o botão direito e selecione a filial correspondente.</ul>
-                <ul><strong>Apelido</strong> -  Pode ser alterado! Será o apelido que constará na lista de vendedores do LinxPOS.</ul>
-                <ul><strong>CPF</strong> - Dever sempre ser preeenchiodo um CPF válido.</ul>
-                <ul><strong>Cidade</strong></ul>
-                <ul><strong>UF</strong></ul>
-                <ul><strong>Cargo</strong> Ex: VENDEDOR / GERENTE</ul>
+                <table class="table table-striped table-bordered">
+                  <tbody>
+                    <tr>                  
+                      <td colspan="2" align="center" >Nessa tela os campos necessários para cadastro de funcionários são:</td>
+                    </tr>
+                    <tr>                  
+                      <td>Vendedor</td>
+                      <td>Não pode ser alterado apos a criação do cadastro.</td>
+                    </tr>
+                    <tr>
+                      <td>Filial</td>
+                      <td>Clique com o botão direito e selecione a filial correspondente.</td>
+                    </tr>
+                    <tr>
+                      <td>Apelido</td>
+                      <td>Pode ser alterado! Será o apelido que constará na lista de vendedores do LinxPOS.</td>          
+                    </tr>
+                    <tr>
+                      <td>CPF</td>
+                      <td>Dever sempre ser preeenchiodo um CPF válido.</td>
+                    </tr>
+                    <tr>  
+                      <td>Cidade</td>
+                      <td></td>
+                    </tr>
+                    <tr>  
+                      <td>UF</td>
+                      <td></td>
+                    </tr>
+                    <tr>  
+                      <td>Cargo</td>
+                      <td>Ex: VENDEDOR / GERENTE</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <p>
                   Após inserir todas as informações, clique no botão <strong>Salvar</strong>.<img src="imagens/LinxERP-botao-salvar.jpg" class="img-responsive">
-                </p><hr>
+                </p>
+                <hr>
                 <img src="imagens/linxerp-configuracoes-lojas-salvar1.jpg" class="img-responsive">
               </ol>
+              <hr>
               <li>
                 Para desativar um cadastro de funcionária é necessário apenas inserir o código do funcionario e clicar em <strong>alterar</strong> em seguida preencher o campo <strong>Desativação</strong>  com a data correspondente e clicar na opção <strong>Salvar</strong>.
               </li><hr>
-                <img src="imagens/linxerp-configuracoes-lojas-desativar.jpg" class="img-responsive">
-             <h3>
-                    <strong>OBS:</strong> <strong>NUNCA</strong> excluir um cadastro de funcionário! Caso a funcionária for desligada da loja, apenas preencha o campo <strong>Desativação</strong> com a data correspondente.
-              </h3>
+                <img src="imagens/linxerp-configuracoes-lojas-desativar.jpg" class="img-responsive"><hr>
+                <table class="table table-striped">
+                  <tbody>
+                    <tr>                  
+                      <td><img src="imagens/icone-alerta.png"></td>
+                      <td><br><strong>NUNCA</strong> excluir um cadastro de funcionário! Caso a funcionária for desligada da loja, apenas preencha o campo <strong>Desativação</strong> com a data correspondente.</td>
+                    </tr>
+                  </tbody>
+                </table>
               <hr>
               <div align="right">
             <a class="btn btn-primary btn-lg" href="#top" role="button"> 
@@ -177,9 +211,23 @@
                   <p>Feito o tipo de saída desejado, basta clicar em <strong>Salvar</strong> <img src="imagens/linxerp-botao-salvar.jpg" class="img-responsive"> </p>
                 </ol>
                 <hr>
+          <br>
+          <br>
+          <br>
+          <br>
           <!-- Procedimentos Inventario  -->
           <h3>Inventário</h3>
-            <p>Para ter um estoque correto e com o mínimo de erros e peças negativas, o correto é realizar o inventário a cada troca de coleção, esse é o melhor período, visto que o estoque está bem baixo.</p>
+            <p>
+              Para ter um estoque correto e com o mínimo de erros e peças negativas, o correto é realizar o inventário a cada troca de coleção, esse é o melhor período, visto que o estoque está bem baixo.
+            </p>
+                <table class="table table-striped">
+                  <tbody>
+                    <tr>                  
+                      <td><img src="imagens/icone-pare-v2.png"></td>
+                      <td><br>O processo de inventário é realizado após a realização da contagem de todos os produtos da loja. Procedimento é realizado, geralmente através do <strong>Bloco de Notas</strong> onde o operador bipa o código de barras de cada produto ou digita o código de barras. Esse arquivo com os códigos será importado para o sistema durante o processo de inventário.</td>
+                    </tr>
+                  </tbody>
+                </table>
               <ul>
                 <li>Ir em Seletor <img src="imagens/linxerp-botao-seletor.jpg" class="img-responsive"></li>
                 <li>Controle De Estoque</li>
@@ -189,20 +237,72 @@
               <hr>
               <img src="imagens/linxerp-gsup5.jpg" class="img-responsive">
               <hr>
-              <p>Como informado anteriormente, sempre que for inserir uma informação no sistema, ir em <strong>Incluir</strong> <img src="imagens/linxerp-botao-incluir.jpg" class="img-responsive"></p>
+              <table class="table table-striped">
+                <tbody>
+                  <tr>                  
+                    <td><img src="imagens/icone-alerta.png"></td>
+                    <td><br>Como informado anteriormente, sempre que for inserir uma informação no sistema, clique em <strong>Incluir</strong> <img src="imagens/linxerp-botao-incluir.jpg"><br>Como vamos realizar o processo de importação do inventário para o sistema, antes de iniciar esse processo é necessário clicar no botão <strong>Incluir</strong> <img src="imagens/linxerp-botao-incluir.jpg"> para realizar o processo, caso contrário você estará realizando apenas uma consulta.</td>
+                  </tr>
+                </tbody>
+              </table>
               <img src="imagens/linxerp-gsup6.jpg" class="img-responsive">
               <hr>
               <p>
-                Informar o nome da Contagem e caso tenha mais de uma filial, escolher a filial desejada. Ir na aba Selecionar Itens e seguir as seguintes informações:<br> Informar a data da contagem, lembrando que a informação é <strong>Contagem no Início do Dia</strong>, favor ter atenção à essa data. Marcar a opção <em>Inclui Itens Inativos</em> e após clicar no botão <strong>Incluir Itens na Contagem – Manual.</strong><br> Após, marcar a opção Usar saldo do dia anterior ao do dia da contagem e clicar em <strong>Trazer o Saldo do Estoque dos Produtos.</strong> Após, escolher o arquivo da contagem  ... e  <strong>Importar Contagem.</strong>
+                Informar o nome da <strong>contagem</strong> e caso tenha mais de uma filial, escolher a filial desejada.<br>Ir na aba <strong>Selecionar Itens</strong> e seguir as seguintes informações:<br>Informar a data da contagem, lembrando que a informação é <strong>Contagem no Início do Dia</strong>, favor ter atenção à essa data.<br>Marcar a opção <strong><em>Inclui Itens Inativos</em></strong> e em seguida clicar no botão <strong>Incluir Itens na Contagem – Manual.</strong><br> Na sequência marque a opção <strong>Usar saldo do dia anterior ao do dia da contagem</strong> e clicar em <strong>Trazer o Saldo do Estoque dos Produtos.</strong><br>Clique no botão <strong>...</strong> para selecionar o arquivo da contagem (arquivo do Bloco de Notas com os codigos de barra de todos os produtos contados no inventário). Depois clique em <strong>Importar Contagem.</strong>
               </p>
               <hr>
               <img src="imagens/linxerp-gsup7.jpg" class="img-responsive">
-              <p>Terminando a inserção das informações e arquivo de contagem, ir na próxima aba  <em>Complementos/Ajustes</em></p>
+              <p>Terminando a inserção das informações e arquivo de contagem, ir na próxima aba  <em>Complementos/Ajustes</em></p><hr>
               <img src="imagens/linxerp-gsup8.jpg" class="img-responsive">
               <hr>
               <p>
-                Nessa tela teremos a informação total de Contagem, Saldo de Estoque e Diferença, quando houver.<br>Basta clicar em Salvar <img src="imagens/linxerp-botao-salvar.jpg" class="img-responsive"> que o sistema irá informar a divergência de todos os produtos. Depois será necessário verificar as divergências e apurar o que pode ter acontecido.<br>Apurado todas as divergências, tratar o arquivo de contagem, se necessário criar uma cópia e mexer na cópia, mantendo o arquivo original da contagem intacto e refazer o processo afim de manter a contagem de acordo com o saldo.<br>Todo os saldos e estoque corrigido, clicar em <strong>Ajustar Estoque com as Diferenças de Contagem</strong>. Ao realizar esse processo, o estoque irá ajustar de acordo com a contagem realizada.
+                Nessa tela teremos a informação total de Contagem, Saldo de Estoque e Diferença, quando houver.<br>Basta clicar em Salvar <img src="imagens/linxerp-botao-salvar.jpg" class="img-responsive"> que o sistema irá informar a divergência de todos os produtos. Depois será necessário verificar as divergências e apurar o que pode ter acontecido.<br>Para facilitar a verificação das divergencias podemos exportar as diferenças para realizar a apuração, através do botão relatórios <img src="imagens/Linxerp-botao-relatorios.png" class="img-responsive">
+                Selecione o relatório <strong>(B) Ajuste de Inventario - Resumo Produto Cor</strong> em seguida clique no botão <strong>Exportar..</strong> para gerar o PDF com as diferenças.
+                <hr>
               </p>
+              <img src="imagens/linxerp-gsup15.png" class="img-responsive">
+              <hr>
+              <p>
+                Para exportar o relatório mantenha o formato PDF e clique no botão <strong>Avançar</strong>
+              </p>
+              <img src="imagens/linxerp-gsup17.png" class="img-responsive">
+              <hr>
+              <p>
+                Não é necessário realizar nenhuma alteração nessa tela, apenas clique em <strong>Avançar</strong><br> OBS: Descrição do relatório para identificação posterior é apenas o nome do arquivo PDF que o sistema irá gerar.
+              </p>
+              <img src="imagens/linxerp-gsup18.png" class="img-responsive">
+              <hr>
+              <p>
+                Por padrão o Linx gera o arquivo na pasta Documentos do computador, caso necessário pode alterar o caminho de destino, no exemplo o caminho selecionado é: C:\temp<br>
+                Clique no botão <strong>Avançar</strong> para prosseguir
+              </p>
+              <img src="imagens/linxerp-gsup19.png" class="img-responsive">
+              <hr>
+              <p>
+                Na conclusão do processo desmarque a opção <strong>Abrir o arquivo gerado</strong> para agilizar o processo e clique em <strong>Finalizar</strong>
+              </p>
+              <img src="imagens/linxerp-gsup20.png" class="img-responsive">
+              <hr>
+              <p>
+                Quando o sistema apresentar a mensagem de atenção abaixo, clique no botão <strong>Yes</strong> para gerar o relatório apenas com as diferenças que devem ser tratadas.
+              </p>
+              <img src="imagens/linxerp-gsup16.png" class="img-responsive">
+              <hr>
+              <p>
+                Imagem do PDF gerado no servidor do Linx
+              </p>
+              <img src="imagens/linxerp-gsup21.png" class="img-responsive">
+              <hr>
+              <p>
+                Apurado todas as divergências, tratar o arquivo de contagem, se necessário criar uma cópia e mexer na cópia, mantendo o arquivo original da contagem intacto e refazer o processo afim de manter a contagem de acordo com o saldo.<br>Todo os saldos e estoque corrigido, clicar em <strong>Ajustar Estoque com as Diferenças de Contagem</strong>. Ao realizar esse processo, o estoque irá ajustar de acordo com a contagem realizada.
+              </p>
+              <hr>
+              <img src="imagens/linxerp-gsup14.png" class="img-responsive">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
               <!-- Procedimentos Consulta de Estoque/Notas de Origem  -->
               <h3>Consulta de Estoque/Notas de Origem</h3>
                 <p>Esta opção visa obter melhor detalhe de estoque, como toda a movimentação do produto e nota fiscal de origem dos produtos.</p>
@@ -224,7 +324,7 @@
                 Na aba Extrato, teremos toda a movimentação do produto em questão, inclusive notas de origem e vendas.<br>Essa tela mostra toda a movimentação e saldo do produto, mostra também o custo do produto.
               </p>
                 <img src="imagens/linxerp-gsup12.jpg" class="img-responsive">
-              <p>Os tamanhos em<strong>Vermelho</strong>  mostram a movimentação, em <strong>Azul</strong>, o saldo após a movimentação.<br>Geralmente a primeira linha é a informação da entrada do produto ou nota fiscal de origem.
+              <p>Os tamanhos em <strong>Vermelho</strong>  mostram a movimentação, em <strong>Azul</strong>, o saldo após a movimentação.<br>Geralmente a primeira linha é a informação da entrada do produto ou nota fiscal de origem.
               </p>
               <img src="imagens/linxerp-gsup13.jpg" class="img-responsive">
               <p>Nota fiscal 171215 emitida em 18/11/2017</p>
@@ -251,6 +351,10 @@
             <p><strong>OBS:</strong> O código de cadastro do cliente é o CPF do mesmo.<br>Irá abri a tela 300005</p>
             <img src="imagens/linxerp-gvarejo2.jpg" class="img-responsive">
             <p>Inserir o código do cliente e clicar em <strong>Pesquisar</strong> <img src="imagens/linxerp-botao-pesquisar.jpg" class="img-responsive"> <br> Após a pesquisa realizada, clicar em <strong>Alterar</strong> <img src="imagens/linxerp-botao-alterar.jpg" class="img-responsive"> e alterar as informações desejadas.<br>Feito isso, basta clicar em <strong>Salvar</strong> <img src="imagens/linxerp-botao-salvar.jpg" class="img-responsive"></p>
+            <br>
+            <br>
+            <br>
+            <br>
             <!-- Consulta de Tickets -->
             <h3>Consulta de Tickets</h3>
               <p>Nessa tela, você pode consultar as vendas realizadas no LinxPOS.</p>
@@ -270,6 +374,10 @@
                     <li>Data da Venda</li>
                 </ul>
               <p>Feito isso, basta clicar em Pesquisar <img src="imagens/linxerp-botao-pesquisar.jpg" class="img-responsive"> <br>Realizando essa pesquisa, você terá acesso à todas as informações do ticket pesquisado.</p>
+              <br>
+              <br>
+              <br>
+              <br>
                <!-- Consulta de Venda por Data -->
                <h3>Consulta de Venda por Data</h3>
                 <p>Nessa tela, é possível realizar pesquisa de toda a movimentação da Loja Saídas/Vendas como Markup, Custo Médio, Preço de Custo - Total e Preço de Venda - Total.</p>
@@ -290,9 +398,12 @@
               <p>Irá trazer as informações das vendas do período desejado.<br>Caso pretenda verificar as informações detalhadas acima. Ir na aba <em>Totais</em> </p>
                <img src="imagens/linxerp-gvarejo9.jpg" class="img-responsive">
                <p>Como informado, na aba <em>Totais</em> , teremos todas as informações.</p>
-
-                <!-- Produto Acabado -->
-               <h3>Produto Acabado</h3>
+               <br>
+               <br>
+               <br>
+               <br>
+              <!-- Produto Acabado -->
+              <h3>Produto Acabado</h3>
                 <p>Nessa tela, é possível termos todas as informações do cadastro do produto. Essa tela serve apenas para consulta.</p>
                 <ul>
                   <li>Ir em Seletor <img src="imagens/linxerp-botao-seletor.jpg" class="img-responsive"></li>
@@ -318,8 +429,16 @@
         <div class="tab-pane" role="tabpanel" id="gfinanceira">
           <h3>Alteração de Ticket</h3>
           <p>
-            Essa opção tem por finalidade alterar informações de venda antes da integração do Caixa na Retaguarda, tais como número de parcelas, título e etc.
+            Essa opção tem por finalidade alterar informações de venda <strong>antes</strong> da integração do Caixa na Retaguarda, tais como número de parcelas, título e etc.
           </p>
+          <table class="table table-striped">
+                  <tbody>
+                    <tr>                  
+                      <td><img src="imagens/icone-alerta.png"></td>
+                      <td>Caso a integração do Caixa na Retaguarda já tenha sido efetuada será necessário realizar o <strong>Estorno Da Integração Do Movimento De Loja</strong> na Tela <strong>009125</strong> passo a passo está na sequência da página após a <strong>Conferência e integração do caixa</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
               <ul>
                   <li>Ir em Seletor <img src="imagens/linxerp-botao-seletor.jpg" class="img-responsive"></li>
                   <li>Gestão Financeira</li>
@@ -341,7 +460,10 @@
               <img src="imagens/linxerp-gfin7.png" class="img-responsive">
               <p>Marcar somente a opção <em> Enviar valores para a contabilidade</em> e clicar no botão <strong>Concluir</strong>.</p><hr>
           <hr>
-
+          <br>
+          <br>
+          <br>
+          <br>
           <!-- Conferencia e integração do caixa -->
           <h3>Conferência e Integração do Caixa</h3>
           <p>
@@ -368,6 +490,30 @@
               <p>Nessa parte, é realizada a conferência da conferência. É necessário confirmar se realmente as informações correspondem, feito isso, clicar novamente em <strong>Avançar</strong>.</p><hr>
               <img src="imagens/linxerp-gfin14.png" class="img-responsive">
               <p>Marcar somente a opção <em>Enviar valores para a contabilidade</em> e clicar no botão <strong>Concluir</strong></p>
+              <hr>
+              <br>
+              <br>
+              <br>
+              <br>
+              <!-- Estorno Da Integração Do Movimento De Loja  -->
+              <h3>Estorno da Integração do Movimento de Loja</h3>
+          <p>
+            Essa opção tem por finalidade realizar o estorno da integração realizada na retaguarda dos movimento de venda da loja de acordo com o filtro selcionado: data, tipo de pagamento e filial(loja).
+          </p>
+              <ul>
+                  <li>Ir em Seletor <img src="imagens/linxerp-botao-seletor.jpg" class="img-responsive"></li>
+                  <li>Gestão Financeira</li>
+                  <li>Conferência E Integração De Lojas</li>
+                  <li>009125 Estorno Da Integração Do Movimento De Loja</li>
+              </ul>
+              <img src="imagens/linxerp-gfin18.png" class="img-responsive"><hr>
+              <p>Irá abrir a seguinte tela:</p>
+              <img src="imagens/linxerp-gfin15.png" class="img-responsive">
+              <p>Nessa tela deve ser preenchido os filtros necessários para realizar o estorno da integração. Nesse exemplo será realizado o estorno da integração da filial <strong>FRANQUIA SALVADOR II</strong> apenas para do dia <strong>18</strong>, estornando todos os tipos de pagamento selecionando: <strong>Todos</strong> em Tipo Pgto. Após preencher todos os campos clique no botão <strong>Executar</strong> para finalizar o processo</p><hr>
+              <img src="imagens/linxerp-gfin16.png" class="img-responsive">
+              <p>Clique em <strong>OK</strong></p><hr>
+              <img src="imagens/linxerp-gfin17.png" class="img-responsive"><hr>
+              <p>A tela deve apresentar a mensagem: <strong>ESTORNO REALIZADO COM SUCESSO.</strong> para a filial selecionada,  no exemplo Cód. Filial: 001068.</p><hr>
             <div align="right">
             <a class="btn btn-primary btn-lg" href="#top" role="button"> 
             <span class="glyphicon glyphicon-arrow-up"> Topo</span>
@@ -376,35 +522,72 @@
           <hr>
         </div>
 
-           <!-- aba gestao fiscal -->
+        <!-- aba gestao fiscal -->
         <div class="tab-pane" role="tabpanel" id="gfiscal">
         <h3>Carta de Correção</h3>
-          <p>Esta opção tem por finalidade gerar a carta de correção das notas emitidas.</p>
+          <p>
+            Esta opção tem por finalidade gerar a carta de correção das notas emitidas.
+          </p>
           <ul>
                   <li>Ir em Seletor <img src="imagens/linxerp-botao-seletor.jpg" class="img-responsive"></li>
                   <li>Gestão Fiscal</li>
                   <li>009057 Carta De Correção</li>
               </ul>
           <img src="imagens/linxerp-gfiscal1.png" class="img-responsive"><hr>
-          <p>Irá abrir a seguinte tela:</p>
+          <p>
+            Irá abrir a seguinte tela:
+          </p>
             <img src="imagens/linxerp-gfiscal2.png" class="img-responsive"><hr>
-          <p>Selecione na barra de menu superior da tela a opção <strong>Incluir</strong> <img src="imagens/linxerp-botao-incluir.jpg" class="img-responsive"> irá habilitar a seguinte janela:</p>
-          <img src="imagens/linxerp-gfiscal3.png" class="img-responsive">
-          <p>Os campos necessários para o filtro são:</p>
-          <ol>
-            <li>Nota Fiscal</li>
-            <li>Emissão</li>
-            <li>Série NF</li>
-          </ol>
-          <p>Feito isso, clique em <strong>Avançar</strong>.</p>
-          <img src="imagens/linxerp-gfiscal4.png" class="img-responsive">
-          <p>Irá aparecer as seguintes informações, acesse a aba <em>Irregularidades</em> e clique no botão azul <strong>Incluir</strong> e em seguida, clique com o botão direito do mouse no campo <strong>Irregularidades</strong>, que aparecerá uma lista com as opções para gerar a carta de correção.</p>
-          <img src="imagens/linxerp-gfiscal5.png" class="img-responsive">
-          <p>Escolha a opção desejada, o exemplo usado foi a irregularidade de <strong>peso</strong>, ficará assim:</p>
-          <img src="imagens/linxerp-gfiscal6.png" class="img-responsive">
-          <p>Mudança na informação referente  ao peso, de <strong>0 kg </strong> para <strong>10 kg </strong><br>Alterado a informação desejada, clique em <strong>Salvar</strong> <img src="imagens/linxerp-botao-salvar.jpg" class="img-responsive"><br>Após salvar, clique no botão <strong>Envia CC-e</strong></p>
-          <img src="imagens/linxerp-gfiscal7.png" class="img-responsive">
-          <hr>
+          <p>
+            Selecione na barra de menu superior da tela a opção <strong>Incluir</strong> <img src="imagens/linxerp-botao-incluir.jpg" class="img-responsive"> irá habilitar a seguinte janela:
+          </p>
+            <img src="imagens/linxerp-gfiscal8.png" class="img-responsive"><hr>
+          <p>
+            Os campos necessários para o filtro são:
+          </p>
+            <table class="table table-striped">
+              <tbody>
+                <tr>                  
+                  <td>Tipo</td>
+                </tr>
+                <tr>                  
+                  <td>Emissão</td>
+                </tr>
+                <tr>                  
+                  <td>Série NF</td>
+                </tr>
+              </tbody>
+            </table>
+          <p>
+            Feito isso, clique em <strong>Avançar</strong>.
+          </p>
+          <p>
+            O sistema habilitará a Aba <strong>Lista</strong> nessa tela o Linx apresenta todas as notas correspondentes a filtro realizada.<br>Selecione a nota correspondente e clique no botão <strong>Selecionar</strong>.
+          </p>
+            <img src="imagens/linxerp-gfiscal9.png" class="img-responsive"><hr>
+          <p>
+            O sistema retorna para a Aba <strong>Filtro</strong> com todos os dados preenchidos, clique no botão <strong>Avançar</strong>.
+          </p>
+            <img src="imagens/linxerp-gfiscal10.png" class="img-responsive"><hr>
+          <p>
+            Irá aparecer as seguintes informações, acesse a aba <strong>Irregularidades</strong> e clique no botão azul <strong>Incluir</strong> e em seguida, clique com o botão direito do mouse no campo <strong>Irregularidades</strong>, que aparecerá uma lista com as opções para gerar a carta de correção.
+          </p>
+            <img src="imagens/linxerp-gfiscal4.png" class="img-responsive"><hr>
+          <p>
+            Escolha a opção desejada, o exemplo usado foi a irregularidade de <strong>peso</strong>, ficará assim:
+          </p>
+            <img src="imagens/linxerp-gfiscal5.png" class="img-responsive"><hr>
+          <p>
+            Mudança na informação referente  ao peso, de <strong>0 kg </strong> para <strong>10 kg </strong>
+          </p>
+            <img src="imagens/linxerp-gfiscal6.png" class="img-responsive"><hr>
+          <p>
+            Alterada a informação desejada, clique em <strong>Salvar</strong> <img src="imagens/linxerp-botao-salvar.jpg" class="img-responsive"><br>Após salvar, clique no botão <strong>Envia CC-e</strong>
+          </p>
+            <img src="imagens/linxerp-gfiscal7.png" class="img-responsive"><hr>
+          <p>
+            Após gerar a carta de correção, podemos imprimir ou gerar um PDF da carta.<br> Clique no icone relatórios (F11) <img src="imagens/linxerp-botao-relatorios.png"> o sistema abrirá a tela para a realização do processo.
+          </p>
           <div align="right">
             <a class="btn btn-primary btn-lg" href="#top" role="button"> 
             <span class="glyphicon glyphicon-arrow-up"> Topo</span>
@@ -423,4 +606,15 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
+  <footer>
+    <div class="footer">
+    <div class="row col-md-6">
+      </div>
+    <div class="row col-md-6"  align="right">
+          <p>Desenvolvido por: Augusto Borges</p>
+          <p>Colaboradores: Tauã Fernandes/Kaike Souto</p>
+          <p>Críticas e sugestões: <a href="mailto:augusto.borges@mariafilo.com.br">augusto.borges@mariafilo.com.br</a></p>
+      </div>
+    </div>
+</footer>
 </html>

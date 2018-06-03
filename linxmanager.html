@@ -2,6 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -42,6 +43,7 @@
             <li> <a href="linxpos.html">LinxPOS</a> </li>
             <li> <a href="linxmanager.html">LinxPOS Manager</a> </li>
             <li> <a href="linxretaguarda.html">Linx ERP Retaguarda</a> </li>
+            <li> <a href="linxweb.html">LinxWeb</a> </li>
             <li> <a href="mide.html">Mid-e</a> </li>
             <li> <a href="xml.html">XML</a> </li>
             <li> <a href="suporte.html">Suporte</a> </li>
@@ -95,11 +97,11 @@
           </p>
           <ol>
             <li>Acesso o Menu principal do LinxPOS Manager.</li>
-            <img src="imagens/linxmanager-menu.jpg" class="img-responsive">
+            <img src="imagens/linxmanager-menu.jpg" class="img-responsive"><br>
             <li>No menu <strong>Caixa</strong>, clique na opção <strorng>Relatórios.</strorng></li>
-            <img src="imagens/linxmanager-menu-caixa.jpg" class="img-responsive">
+            <img src="imagens/linxmanager-menu-caixa.jpg" class="img-responsive"><br>
             <li>Na área superior da tela, informe os filtros para configuração.</li>
-            <img src="imagens/linxmanager-caixa-relatorios.jpg" class="img-responsive">
+            <img src="imagens/linxmanager-caixa-relatorios.jpg" class="img-responsive"><br>
 
             <table class="table table-striped table-bordered">
               <tbody>
@@ -127,8 +129,10 @@
                 </tr>
               </tbody>
             </table>
+            <br>
             <li>Configurados os filtros, clique em <strong>Pesquisar (F3)</strong>. Os dados serão apresentados nas abas disponíveis.</li>
-            <img src="#">
+            <img src="imagens/linxmanager-caixa-relatorios1.png" class="img-responsive">
+            <br>
             <table class="table table-striped table-bordered">
               <tbody>
                 <tr>
@@ -186,32 +190,73 @@
             Toda vez que é realizada uma saída de mercadoria em outra loja que não seja a sua ou pelo escritório (Matriz), é gerada uma entrada automática desta mercadoria na sua loja. Esta entrada fica em trânsito, aguardando a loja confirmar o recebimento.<br>Para iniciar a entrada de mercadoria, realize os procedimentos a seguir:
           </p>
           <ol>
-            <li>Selecione a opção <strong>Estoque</strong></li><br>
-            <img src="imagens/linxmanager-menu.jpg" class="img-responsive">
-            <li>Selecione a opção <strong>Entrada de Mercadorias.</strong></li><br>
-            <img src="imagens/linxmanager-menu-estoque.jpg" class="img-responsive">
-            <li>Informe o <strong>Operador e Senha.</strong></li><br>
-            <img src="imagens/linxmanager-login.jpg" class="img-responsive">
-            <li>Será exibida a tela de entrada de Mercadorias. Clique no botão <strong>Novo (F5).</strong></li><br>
-            <img src="imagens/linxmanager-novo.jpg" class="img-responsive">
-            <li>Informe o tipo de entrada selecionando o botão Transferência.</li><br>
-            <img src="imagens/linxmanager-tipo-entrada.jpg" class="img-responsive">
-            <li>Selecione a opção Trânsito.</li><br>
-            <img src="imagens/linxmanager-tipo-entrada1.jpg" class="img-responsive">
-            <li>Será apresentada a tela para selecionar o Romaneio a Receber. Selecione a na Nota a receber e clque no botão <strong>Selecionar.</strong></li><br>
-            <img src="imagens/linxmanager-tipo-entrada2.jpg" class="img-responsive">
-            <li>Na Aba ENTRADA, SEMPRE verificar se os dados conferem com os dados da NF - Nota Fiscal recebida (Número da NF ou Chave NFE, tipo de entrada, tabela de preço, filial de origem – loja que enviou a NF, quantidade e o valor da nota)</li><br>
-            <img src="imagens/linxmanager-entrada-mercadoria.jpg" class="img-responsive">
-            <li>As notas de entrada sempre devem estar selecionadas como <strong>NF ELETRÔNICA</strong> na opção Espécie Série. Nehuma oura opção deve ser selecionada neste processo.</li><br>
-            <img src="imagens/linxmanager-especie-serie.jpg" class="img-responsive">
-            <li>Acesse a aba PRODUTOS e realize a conferência das quantidades e dos produtos recebidos.</li><br>
-            <img src="imagens/linxmanager-entrada-produto.jpg" class="img-responsive">
-            <li>Ao finalizar a conferência, selecione SEMPRE as opções abaixo: </li><br>
-            <img src="imagens/linxmanager-conferido-encerrado.jpg" class="img-responsive">
-            <span><strong>Atenção: Caso não sejam selecionadas as Opções de Conferida e Encerrada o Estoque não será atualizado e o Escritório não conseguirá identificar que foi realizada a entrada dessa Nota Fiscal.</strong></span>
-            <li>Clique no botão Salvar (F4).</li><br>
+            <li>
+              Selecione a opção <strong>Estoque</strong>
+            </li>
+              <img src="imagens/linxmanager-menu.jpg" class="img-responsive"><hr>
+            <li>
+              Selecione a opção <strong>Entrada de Mercadorias.</strong>
+            </li>
+              <img src="imagens/linxmanager-menu-estoque.jpg" class="img-responsive"><hr>
+            <li>
+              Informe o <strong>Operador e Senha.</strong>
+            </li>
+              <img src="imagens/linxmanager-login.jpg" class="img-responsive"><hr>
+            <li>
+              Será exibida a tela de entrada de Mercadorias. Clique no botão <strong>Novo (F5)</strong>.
+            </li>
+              <img src="imagens/linxmanager-novo.jpg" class="img-responsive"><hr>
+            <li>
+              Informe o tipo de entrada selecionando o botão <strong>Transferência</strong>.
+            </li>
+              <img src="imagens/linxmanager-tipo-entrada.jpg" class="img-responsive"><hr>
+            <li>
+              Selecione a opção <strong>Trânsito</strong>.
+            </li>
+              <img src="imagens/linxmanager-tipo-entrada1.jpg" class="img-responsive"><hr>
+            <li>
+              Será apresentada a tela para selecionar o Romaneio a Receber. Selecione a na Nota a receber e clique no botão <strong>Selecionar.</strong>
+            </li>
+              <img src="imagens/linxmanager-tipo-entrada2.jpg" class="img-responsive"><hr>
+            <li>
+              Na Aba ENTRADA, <strong>SEMPRE</strong> verificar se os dados conferem com os dados da NF-e - Nota Fiscal recebida (Número da NF ou Chave NFe, tipo de entrada, tabela de preço, filial de origem – loja que enviou a NFe, quantidade e o valor da nota)
+            </li>
+              <img src="imagens/linxmanager-entrada-mercadoria.jpg" class="img-responsive"><hr>
+                <table class="table table-striped">
+                  <tbody>
+                    <tr>                  
+                      <td><img src="imagens/icone-alerta.png"></td>
+                      <td><br>Ainda na Aba <strong>ENTRADA</strong> caso o <strong>FORNECEDOR</strong> não estiver preenchido, clique com botão direiro para inserir a informação</td>
+                    </tr>
+                  </tbody>
+                </table>
+              <img src="imagens/linxmanager-entrada-mercadoria1.png" class="img-responsive"><hr>
+            <li> 
+              As notas de entrada sempre devem estar selecionadas como <strong>NF ELETRÔNICA</strong> na opção Espécie Série, Modelo Fiscal <strong>55</strong>. Nenhuma outra opção deve ser selecionada neste processo.
+            </li>
+              <img src="imagens/linxmanager-especie-serie.jpg" class="img-responsive"><hr>
+            <li>
+              Acesse a aba PRODUTOS e realize a conferência das quantidades e dos produtos recebidos.
+            </li>
+              <img src="imagens/linxmanager-entrada-produto.jpg" class="img-responsive"><br>
+            <li>
+              Ao finalizar a conferência, selecione <strong>SEMPRE</strong> as opções: <strong>CONFERIDA - ENCERRADA</strong> 
+            </li><br>
+              <img src="imagens/linxmanager-conferido-encerrado.jpg" class="img-responsive">
+            <br>
+            <table class="table table-striped">
+              <tbody>
+                <tr>                  
+                  <td><img src="imagens/icone-pare-v2.png"></td>
+                  <td><br>Caso na entrada não for selecionadas as Opções de <strong>Conferida e Encerrada</strong> o Estoque NÃO será atualizado e o Escritório não conseguirá identificar que foi realizada a entrada dessa NF-e. A NF-e ficará constando com pendente no trânsito da retaguarda.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <li>Para finalizar o processo clique no botão <strong>Salvar (F4)</strong>.</li>
             <img src="imagens/linxmanager-salvar.jpg" class="img-responsive">
           </ol>
+          <hr>
           <!--<h3>Saída de Mercadorias (Transferências)</h3><hr>
           <ol>
             <li>Selecione a opção <strong>Estoque</strong></li><br>
@@ -239,6 +284,11 @@
             <span><strong>Selecionar: SALVAR (F4)</strong></li><br>
             <img src="imagens/linxmanager-salvar.jpg" class="img-responsive">
           </ol>-->
+          <br>
+          <br>
+          <br>
+          <br>
+          <!-- Consulta de estoque -->
           <h3>Consulta de estoque</h3><hr>
             <span>Nas opções de <strong>FILTROS</strong> é possível consultar o produto por:</span><br>
               <ul>
@@ -251,9 +301,9 @@
             <span>Para realizar a consulta ao estoque, efetue os procedimentos a seguir:</span>
             <ol>
               <li>No menu ESTOQUE, selecione a opção Consulta de estoque. Será apresentada a tela de consulta.</li>
-              <br><img src="imagens/linxmanager-menu-estoque.jpg" class="img-responsive">
+              <img src="imagens/linxmanager-menu-estoque.jpg" class="img-responsive"><hr>
               <li>Informe o produto, cor ou o código de barras e clique no Pesquisar (F3).</li>
-              <img src="imagens/linxmanager-consulta-estoque.jpg" class="img-responsive">
+              <img src="imagens/linxmanager-consulta-estoque.jpg" class="img-responsive"><hr>
             </ol>
             <table class="table table-striped table-bordered">
               <tbody>
@@ -280,6 +330,10 @@
               </tbody>
             </table>
             <hr>
+            <br>
+            <br>
+            <br>
+            <br>
             <!-- Devolução de Mercadoria -->
             <h3>Devolução de Mercadoria</h3>
             <p>
@@ -290,36 +344,61 @@
               </ul>
             </p>
             <ol>
-            <li>Selecione a opção <strong>Estoque</strong></li>
-            <img src="imagens/linxmanager-menu.jpg" class="img-responsive"><hr>
-            <li>Selecione a opção <strong>Saída de Mercadorias.</strong></li>
-            <img src="imagens/linxmanager-menu-estoque.jpg" class="img-responsive"><hr>
-            <li>Informe o <strong>Operador e Senha.</strong></li>
-            <img src="imagens/linxmanager-login.jpg" class="img-responsive"><hr>
-            <li>Será exibida a tela de Saída de mercadorias. Clique no botão <strong>Novo (F5).</strong></li>
-            <img src="imagens/linxmanager-novo.jpg" class="img-responsive"><hr>
-            <li>O sistema exibirá as opções disponíveis. Selecionar a Opção: <strong>MANUAL</strong>.</li>
-            <img src="imagens/linxmanager-tipo-saida.jpg" class="img-responsive"><hr>
-            <li>Agora vamos iniciar a geração da nota. Devemos preencher os seguintes campos:</li>
-              <ul>
-                <li>Série: Sempre será <strong>4</strong></li>
-                <li>Tipo de Saída: <strong>Saída por Devolução</strong></li>
-                <li>Tabela de Preços: Sempre será <strong>Tabela de Compras (Exemplo: AMERICAS COMPRAS)</strong></li>
-                <li>As opções Romaneio, Nota Fiscal e Emissão serão colocadas automaticamente quando salvar a nota.</li>
-                <li>Na opção Saída/Devolução marque a opção: <strong>É uma saída ou devolução</strong>. Depois marque a opção: <strong>Fornecedor</strong> e coloque dessa forma: <strong>MATRIZ MARIA FILÓ</strong>. Um atalho para facilitar é colocar <strong>matriz%</strong> aperte TAB no teclado ele irá completar automaticamente.</li>
-                <li> Na opção <strong>Responsável</strong> coloque o nome de quem está gerando a nota.</li> 
-              </ul>
+            <li>
+              Selecione a opção <strong>Estoque</strong>
+            </li>
+              <img src="imagens/linxmanager-menu.jpg" class="img-responsive"><hr>
+            <li>
+              Selecione a opção <strong>Saída de Mercadorias.</strong>
+            </li>
+              <img src="imagens/linxmanager-menu-estoque.jpg" class="img-responsive"><hr>
+            <li>
+              Informe o <strong>Operador e Senha.</strong>
+            </li>
+              <img src="imagens/linxmanager-login.jpg" class="img-responsive"><hr>
+            <li>
+              Será exibida a tela de Saída de mercadorias. Clique no botão <strong>Novo (F5).</strong>
+            </li>
+              <img src="imagens/linxmanager-novo.jpg" class="img-responsive"><hr>
+            <li>
+              O sistema exibirá as opções disponíveis. Selecionar a Opção: <strong>MANUAL</strong>.
+            </li>
+              <img src="imagens/linxmanager-tipo-saida.jpg" class="img-responsive"><hr>
+            <li>
+              Agora vamos iniciar a geração da nota. Devemos preencher os seguintes campos:
+            </li>
+              <table class="table table-striped table-bordered">
+                <tbody>
+                  <tr>
+                    <td>Série: Sempre será <strong>4</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Tipo de Saída: <strong>Saída por Devolução</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Tabela de Preços: Sempre será <strong>Tabela de Compras (Exemplo: AMERICAS COMPRAS)</strong></td>
+                  </tr>
+                  <tr>
+                    <td>As opções Romaneio, Nota Fiscal e Emissão serão colocadas automaticamente quando salvar a nota.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Na opção Saída/Devolução marque a opção: <strong>É uma saída ou devolução</strong>. Depois marque a opção: <strong>Fornecedor</strong> e coloque dessa forma: <strong>MATRIZ MARIA FILÓ</strong>. Um atalho para facilitar é colocar <strong>matriz%</strong> aperte TAB no teclado ele irá completar automaticamente.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Na opção <strong>Responsável</strong> coloque o nome de quem está gerando a nota.</td>
+                  </tr>
+                </tbody>
+              </table>
             <img src="imagens/linxmanager-saida-devolucao1.png" class="img-responsive"><hr>
             <li>
               Nosso próximo passo e incluir os produtos da nota para isso devemos ter as notas de origem em mãos<br>Na tela que vimos acima clique na aba <strong>PESQUISA DE NOTAS FISCAIS</strong><br><img src="imagens/linxmanager-saida-devolucao2.png" class="img-responsive">Nessa Tela que iremos incluir os nossos produtos, selecione a opção nota fiscal e digite, o numero da nota fiscal de origem e clica no botão <strong>pesquisar</strong>. Ao clicar nesse botão ele irá aparecer uma mensagem, clique em <strong>OK</strong>, fazendo isso irá carregar os produtos.<br>
-              <img src="imagens/linxmanager-saida-devolucao3.png" class="img-responsive">Após o sistema carregar os produtos na tela você deve escolher o produto marcando a caixa de seleção dele e escolher a quantidade e a peça que você vai devolver. Ao final clique no botão <strong>gravar selecionados</strong>.<hr><img src="imagens/linxmanager-saida-devolucao4.png" class="img-responsive">
-              
+              <img src="imagens/linxmanager-saida-devolucao3.png" class="img-responsive">Após o sistema carregar os produtos na tela você deve escolher o produto marcando a caixa de seleção dele e escolher a quantidade e a peça que você vai devolver. Ao final clique no botão <strong>Gravar selecionados</strong>.<hr><img src="imagens/linxmanager-saida-devolucao4.png" class="img-responsive"> 
             </li>
             <hr>
-            <p><strong>Erros Comuns:</strong>
-              <ul>
-                <li>Ao pesquisar a nota pode ser que ela não traga nenhum produto se isso ocorrer entre em contato conosco, <a href="suporte.html" target="_blank"> Suporte</a> que faremos a correção.</li>
-              </ul>
+            <p>
+              <strong>Erros Comuns:</strong><br>Ao pesquisar a nota pode ser que ela não traga nenhum produto se isso ocorrer entre em contato conosco, <a href="suporte.html" target="_blank"> Suporte</a> que faremos a correção.
             </p>
             <li>Após selecionar os produtos que você vai devolver, vá na aba <strong>PRODUTOS</strong> e verifique se todos se encontram lá e se estão corretos. Se tiver alguma diferença clique em cima do produto e clique no x vermelho para excluir, e volte na aba <strong>PESQUISA DE NOTAS FISCAIS</strong>  e faça o processo de importação dele novamente.</li>
             <li>acesse a aba SAÍDA e marque a opção encerrada:</li>
@@ -338,7 +417,7 @@
                   </tr>
                   <tr>
                     <td>6202</td>
-                    <td>Franquias fora do Rio de Janeiro</td>
+                    <td>Franquias fora do estado do Rio de Janeiro</td>
                   </tr>
                 </tbody>
               </table>
@@ -350,7 +429,7 @@
             <img src="imagens/linxmanager-nf-destinatario.jpg" class="img-responsive">
             <p>Aperte <strong>Finalizar</strong>.</p>
             <li>Ao finalizarmos o processo das informações do cabeçalho da nota, vamos inserir as informações relacionadas as obrigações fiscais da nota<br>
-            <img src="imagens/linxmanager-saida-devolucao5.png" class="imp-responsive"><hr> Ao abrir a tela iremos na aba <strong>ITENS FISCAIS</strong> e vamos procurar a coluna tributação origem e nessa aba que consultamos se os produtos são nacionais ou importados.<hr><img src="imagens/linxmanager-saida-devolucao6.png" class="img-responsive"> Esse procedimento tem que ser feito para efetuarmos o calculo da alíquota de imposto dos produtos.<br>Todo produto que tiver com o numero 0 na tributação origem e nacional e todo produto que tiver 1,2 ou 3 e produto importado.<br>Para calcular os produtos nacionais você deve somar todos os produtos e dividir pela a porcentagem da sua alíquota<br><strong>Exemplo:</strong><br> 2 produtos que no total dão 450,00, pegue esse valor e divida por sua alíquota, aqui usarei a alíquota de Ribeirão Preto de 12% o seu total será 54,00.<br>A mesma coisa para produtos importados só que para todos os produtos importados a sua alíquota e 4%. 450,00x 4% =18,00<br>Após os cálculos usamos os resultados para colocarmos em um texto que colocamos na aba de <strong>OBSERVAÇÕES.<hr></strong><img src="imagens/linxmanager-saida-devolucao7.png" class="img-responsive">
+            <img src="imagens/linxmanager-saida-devolucao5.png" class="imp-responsive"><hr> Ao abrir a tela iremos na aba <strong>ITENS FISCAIS</strong> e vamos procurar a coluna tributação origem e nessa aba que consultamos se os produtos são nacionais ou importados.<hr><img src="imagens/linxmanager-saida-devolucao6.png" class="img-responsive"> Esse procedimento tem que ser feito para efetuarmos o calculo da alíquota de imposto dos produtos.<br>Todo produto que tiver com o numero 0 na tributação origem e nacional e todo produto que tiver 1,2 ou 3 e produto importado.<br>Para calcular os produtos nacionais você deve somar todos os produtos e dividir pela a porcentagem da sua alíquota<br><strong>Exemplo:</strong><br> 2 produtos que no total somam 450,00, pegue esse valor e divida por sua alíquota, aqui usarei a alíquota de Ribeirão Preto de 12% o seu total será 54,00.<br>A mesma coisa para produtos importados só que para todos os produtos importados a sua alíquota e 4%. 450,00x 4% =18,00<br>Após os cálculos usamos os resultados para colocarmos em um texto que colocamos na aba de <strong>OBSERVAÇÕES.<hr></strong><img src="imagens/linxmanager-saida-devolucao7.png" class="img-responsive">
             <hr>
             <table class="table table-striped table-bordered">
               <tbody>
@@ -365,12 +444,13 @@
                     <td>PERMITE O APROVEITAMENTO DO CRÉDITO DE ICMS NO VALOR DE R$ 18,00; CORRESPONDENTE À ALÍQUOTA DE 4%, NOS TERMOS DO ART. 23 DA LEI COMPLEMENTAR Nº 123, DE 2006</td>
                   </tr>
                   <tr>
-                    <td colspan="2"><strong>Importante:</strong> Se a nota tiver produtos nacionais e importados para devolver e um texto para nacional e um texto para importados.</td>
+                    <td colspan="2"><strong>Importante:</strong> Se a nota tiver produtos nacionais e importados para devolver é necessário um texto para nacional e um texto para importados.</td>
                   </tr>
                 </tbody>
               </table>
             </li>
-            <li>Na aba <strong>TRANSPORTADORA</strong> coloque a transportadora que irá levar a mercadoria.</li><hr>
+            <li>Na aba <strong>TRANSPORTADORA</strong> clique com o botão DIRETO do mouse no campo transportadora e selecione a cadastro da transportadora que realizará o transporte.</li>
+            <img src="imagens/linxmanager-saida-devolucao9.png" class="img-responsive"><hr>
             <li>Na aba <strong>CABEÇALHO</strong> se atente a <strong>Quantidade Total</strong> ela deve ser igual a de produtos que você, esta devolvendo<hr><img src="imagens/linxmanager-saida-devolucao8.png" class="img-responsive"><hr>
               <table class="table table-striped table-bordered">
               <tbody>
@@ -392,6 +472,48 @@
               Feito esse processo clique em <strong>OK</strong> para enviar a nota para validação na SEFAZ, se tudo ocorrer forma correta o SEFAZ validará a nota e irá dizer que a nota foi autorizada e se você deseja imprimir o romaneio e a nota fiscal. <br> Qualquer erro que de na nota fiscal entre em contato com o T.I.
             </li>
           </ol>
+
+
+          <!-- Devolução ao fornecedor e devolução de transferência - Portal Linx -->
+          <h3>Devolução ao fornecedor e devolução de transferência</h3>
+            <p>
+              Em função da lei nº 6.331, de 10 de outubro de 2012 do Estado do Rio de Janeiro, o Linx POS Manager foi adequado para garantir que todas as saídas de mercadoria que tenham como destino o fornecedor (mesmo quando recebidas fiscalmente como transferência) tenham a emissão da nota fiscal de forma fiscalmente igual à nota do recebimento da mercadoria (preço de custo), devendo também tratar para não permitir a reutilização de uma nota recebida quando todas as unidades dessa já foram usadas para justificar saídas anteriores.
+              <ul>
+                <li>Ter as notas de origem em mãos das peças que serão feitas as devoluções</li>
+                <li>Verificar se a entrada das notas de origem foram realizadas corretamente</li>
+              </ul>
+            </p>
+            <table class="table table-striped">
+              <tbody>
+                  <tr>
+                    <th colspan="2">Natureza: </th>
+                  </tr>
+                  <tr>
+                    <td>5202</td>
+                    <td>Franquias dentro do estado do  Rio de Janeiro</td>
+                  </tr>
+                  <tr>
+                    <td>6202</td>
+                    <td>Franquias fora do estado do Rio de Janeiro</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-striped">
+              <tbody>
+                  <tr>
+                    <th colspan="2">Natureza: </th>
+                  </tr>
+                  <tr>
+                    <td>5202</td>
+                    <td>Franquias dentro do estado do  Rio de Janeiro</td>
+                  </tr>
+                  <tr>
+                    <td>6202</td>
+                    <td>Franquias fora do estado do Rio de Janeiro</td>
+                  </tr>
+                </tbody>
+              </table>
+
 
             <div align="right">
             <a class="btn btn-primary btn-lg" href="#top" role="button"> 
@@ -416,7 +538,52 @@
         <!-- aba clientes -->
         <div class="tab-pane" role="tabpanel" id="clientes">
           <h3>Clientes</h3>
-          <img src="imagens/construcao.png" class="img-responsive">
+            <p>
+              O gerenciamento do Cadastro de Clientes possibilita monitorar seu comportamento de compra como volumes de troca, formas de pagamento utilizadas, produtos adquiridos, dentre outros. Manter um cadastro de clientes atualizado e completo possibilita estreitar o relacionamento loja x cliente, uma vez que todo o histórico pode ser observado diretamente na operação da venda. Desta forma, a loja torna-se um agente ativo na gestão de clientes.<br>
+              <br>O LinxPOS Manager oferece diversos recursos de pesquisa que facilitam o acesso aos dados dos clientes. Esta opção permite consultar todos ou um cliente, alterar dados e excluir o cadastro, desde que não possua venda associada.<br>
+              <br>O cadastro do cliente pode ser apresentado no terminal de venda, de acordo com as configurações de venda. No entanto, algumas empresas não indicam que o cliente é uma informação obrigatória na venda, mas querem posteriormente efetuar o cadastro. Isso ocorre quando o cliente preenche uma ficha de cadastro.<br>
+              <br>É possível associar o cupom fiscal de venda ao respectivo cliente. Essa associação é fundamental para as empresas que desejam conhecer o perfil de compra de seus clientes, promovendo ações de marketing de relacionamento.<br>
+              <br>Outro recurso disponível é o cadastro do número de cartão fidelidade, para lojas que trabalham com campanhas específicas de fidelidade.
+            </p>
+            <p>
+              Para inserir/consultar dados de clientes:
+            </p>
+            <ol>
+              <li>
+                 Acesse o Menu principal e selecione a opção: <img src="imagens/linxmanager-clientes2.png" class="img-responsive">
+              </li><br>
+                <p>Será apresentada a tela para cadastro/consulta.</p>
+                <img src="imagens/linxmanager-clientes4.png" class="img-responsive"><hr>
+              <li>
+                Para inserir um novo cliente, clique no botão <img src="imagens/linxmanager-novo.jpg" class="img-responsive">
+              </li><hr>
+              <li>
+                Para pesquisar, informe o nome ou CPF e clique no botão <img src="imagens/linxmanager-pesquisar.jpg" class="img-responsive"> Para pesquisar todos os clientes, clique diretamente no botão <strong>Pesquisar</strong> serão apresentados os dados do primeiro cliente localizado.
+              </li><hr>
+              <li>
+                Por meio dos botões de navegação é possível avançar para consulta aos dados de outros clientes.
+              </li>
+                <img src="imagens/linxmanager-clientes3.png" class="img-responsive">
+              <hr>
+              <li>
+                Por meio do botão <strong>Tickets</strong>, é possível visualizar todas as vendas realizadas para o cliente selecionado.
+              </li>
+                <img src="imagens/linxmanager-botao-tickets.png" class="img-responsive">
+              <hr>
+              <li>
+                Será aberta a tela de segurança do sistema para seleção do operador e senha.
+              </li>
+                <img src="imagens/linxpos-login.jpg" class="img-responsive">
+                  <p>
+                    Selecione o operador e informe a senha.<br>Será aberta a tela com o histórico de Tickets do cliente consultado.
+                  </p>
+                    <img src="imagens/linxmanager-clientes-tickets.png" class="img-responsive">
+                    <hr>
+              <li>
+                Consulte, insira ou altere os dados necessários e clique no botão <strong>Salvar</strong>.
+              </li>
+            </ol>
+          
           <div align="right">
             <a class="btn btn-primary btn-lg" href="#top" role="button"> 
             <span class="glyphicon glyphicon-arrow-up"> Topo</span>
@@ -430,43 +597,68 @@
           <h3>Gerencial</h3><hr>
           <span><a href="pdf/manual-ativos.pdf" target="_blank">Manual Ativos</a></span>
           -->
+          <!-- Notas Fiscais -->
           <h3>Notas fiscais</h3><hr>
             <p>
               A nota fiscal eletrônica (NF-e) é um documento de existência apenas digital, emitido e armazenado eletronicamente, com o intuito de documentar uma operação de circulação de mercadorias ou uma prestação de serviços ocorrida entre as partes.<br>
-              Esta funcionalidade permite visualizar as notas fiscais que já foram emitidas, bem como configurar e realizar a emissão de novas notas.<br>
-              <strong>Para iniciar a emissão de notas fiscais, realize os passos a seguir:</strong>
+              <br>Esta funcionalidade permite visualizar as notas fiscais que já foram emitidas, bem como configurar e realizar a emissão de novas notas.<br>
+              <br>
+            <strong>Para iniciar a emissão de uma NF-e de Consumíveis, realize os passos a seguir:</strong>
             </p>
+            <table class="table table-striped">
+              <tbody>
+              <hr>
+                <tr>                  
+                  <td><img src="imagens/icone-pare-v2.png"></td>
+                  <td><strong>NF-e de Consumíveis</strong> Os “consumíveis” são os materiais de utilização própria da empresa como materiais de escritório, materiais de limpeza, serviços, entre outros. O sistema não controla estoque desses itens logo, não existe o recebimento físico de consumível apenas o recebimento fiscal.</td>
+                </tr>
+              </tbody>
+            </table>
             <ol>
-              <li>No menu GERENCIAL, acesse o ícone  NOTAS FISCAIS.</li>
-              <img src="imagens/linxmanager-menu-gerencial.jpg" class="img-responsive">
+              <li>No menu <strong>GERENCIAL</strong>, acesse o ícone <strong>NOTAS FISCAIS</strong>.</li>
+              <img src="imagens/linxmanager-menu-gerencial.jpg" class="img-responsive"><hr>
               <li>Informe o OPERADOR e SENHA.</li>
-              <img src="imagens/linxmanager-login.jpg" class="img-responsive">
+              <img src="imagens/linxmanager-login.jpg" class="img-responsive"><hr>
               <li>Será exibida a tela de NOTAS FISCAIS. Clique no botão NOVO (F5) para iniciar a emissão da nova nota.</li>
-              <img src="imagens/linxmanager-novo.jpg" class="img-responsive">
+              <img src="imagens/linxmanager-novo.jpg" class="img-responsive"><hr>
               <li>O sistema apresentará uma tela para emissão de uma NOVA NOTA FISCAL.</li>
-              <img src="imagens/linxmanager-nf.jpg" class="img-responsive">
+              <img src="imagens/linxmanager-nf.jpg" class="img-responsive"><hr>
               <li>Selecione a Natureza Fiscal da Operação desejada e clique no Botão Avançar.</li>
-              <img src="imagens/linxmanager-nf-natureza.jpg" class="img-responsive">
+              <img src="imagens/linxmanager-nf-natureza.jpg" class="img-responsive"><hr>
               <li>Informe a Série da Nota Fiscal (SEMPRE SÉRIE 4 – USO NF-e), e clique no Botão Avançar.</li>
-              <img src="imagens/linxmanager-nf-serie.jpg" class="img-responsive">
+              <img src="imagens/linxmanager-nf-serie.jpg" class="img-responsive"><hr>
               <li>Informe o Destinatário da Nota, e clique no Botão Finalizar.</li>
-              <img src="imagens/linxmanager-nf-destinatario.jpg" class="img-responsive">
+              <img src="imagens/linxmanager-nf-destinatario.jpg" class="img-responsive"><hr>
               <li>Será apresentada a Tela com as informações da Nota Fiscal (Espelho da Nota Fiscal), Inserir o volume de acordo com a quantidade que será enviada.</li>
-              <img src="imagens/linxmanager-nf-consumiveis.jpg" class="img-responsive">
+              <img src="imagens/linxmanager-nf-consumiveis.jpg" class="img-responsive"><hr>
               <li>Selecionar a Aba Transportadora e informar qual será a Transportadora.</li>
-              <img src="imagens/linxmanager-nf-transportadora.jpg" class="img-responsive">
-              <li>Na Aba Itens Fiscais, adicionar os itens que serão impressos na Nota, clicando no Botão Inserir Atenção: Existem duas Opções para inserir os itens: PRODUTO e ITEM FISCAL</li>
-              <span>Atenção: Existem duas Opções para inserir os itens</span>
-              <ul>
-                <li>Produtos: São todos os produtos que são vendidos em loja.</li>
-                <li>Itens Fiscais: Materias de Uso e Consumo, Ativos Imobilizados, itens e materiais que não são vendidos.</li>
-              </ul>
+              <img src="imagens/linxmanager-nf-transportadora.jpg" class="img-responsive"><hr>
+              <li>Na Aba Itens Fiscais, adicionar os itens que serão impressos na Nota, clicando no Botão <strong>Inserir</strong>.<img src="imagens/linxmanager-botao-incluir.png" class="img-responsive">
+              <hr>
+                <table class="table table-striped">
+                  <tbody>
+                    <tr>                  
+                      <td><img src="imagens/icone-alerta.png"></td>
+                      <td>Para inserir um item na nota deve ser validar o item de acordo com o tipo, marcando o campo validar item em.</strong><img src="imagens/linxmanager-validar-item.png" class="img-responsive"></td>
+                    </tr>
+                    <tr>                  
+                      <td>Produtos</td>
+                      <td>São todos os produtos que são vendidos em loja.</td>
+                    </tr>
+                    <tr>                  
+                      <td>Itens Fiscais</td>
+                      <td>Materias de Uso e Consumo, Ativos Imobilizados são itens e materiais que não são vendidos.</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+               </li>
               <img src="imagens/linxmanager-nf-itemfiscal.jpg" class="img-responsive">
-              <li>Clique no Botão OK para emitir a Nota Fiscal. A mesma deverá imprimir uma DANFE</li>
+              <p>Clique no Botão <strong>OK</strong> para emitir a Nota Fiscal. A mesma deverá imprimir uma DANFE</p>
+              <hr>
             </ol>
             <h3>Reenvio das Notas Fiscais</h3><hr>
               <span>
-                O Reenvio das Notas é uma rotina das Lojas, o Processo deverá ser realizado diariamente, pois a mesma causa impacto no setor fiscal da Maria Filó. Sempre Verificar os Status das Notas conforme o quadro explicativo.
+                O Reenvio das Notas é uma rotina das Lojas, o Processo deverá ser realizado diariamente, pois a mesma causa impacto no setor fiscal da franquia correspondente efteuando seu fechamento mensal. Sempre Verificar os Status das Notas conforme o quadro explicativo.
               </span>
                 <!--Tabela NFC-e-->
                 <table class="table table-bordered">
@@ -584,21 +776,23 @@
                 <br>
             <ol>
               <li>Ao Abrir a Tela de NOTAS FISCAIS, caso exista pendências fiscais automaticamente abrirá a tela com as notas pendente (NFe ou NFCe). Clique no botão REPROCESSAR, todas as notas serão reprocessadas uma de cada vez</li>
-              <img src="imagens/linxmanager-nf-reprocessamento.jpg" class="img-responsive">
+              <img src="imagens/linxmanager-nf-reprocessamento.jpg" class="img-responsive"><hr>
               <li>Caso o problema persista feche a tela de reprocessamento de notas e consulte a(s) nota(s) pendentes utilizando os filtros da tela.<br>Selecione os filtros: PERÍODO (Data Inicial e Data Final) e o TIPO de NOTA (NFe ou NFCe), para facilitar a consulta.</li>
-              <img src="imagens/linxmanager-nf" class="img-responsive">
-              <li>No caso da Seleção de NF-e, habilitará a aba PESQUISA AVANÇADA, Selecionar essa aba.</li>
-              <img src="#" class="img-responsive">
-              <li>Selecionar os Status das Notas que não foram enviadas para a SEFAZ, conforme imagem abaixo e Clicar em Pesquisar (F3)</li>
-              <img src="#" class="img-responsive">
-              <li>Se For Selecionar a OPÇÃO DE NFC-e (Nota Fiscal ao Consumidor Eletrônica), deverá Selecionar os filtros: DATA, NFC-e, PESQUISA AVANÇADA e Marcar os Status conforme imagem abaixo</li>
-              <img src="imagens/linxmanager-nfce-filtro.jpg" class="img-responsive">
+              <img src="imagens/linxmanager-nf.jpg" class="img-responsive"><hr>
+              <li>No caso da Seleção de NF-e, devem ser selecionados os filtros correspondentes para a verificação de notas pendentes.</li>
+              <img src="imagens/linxmanager-nfe-filtro.jpg" class="img-responsive"><hr>
+              <li>Selecione os status das Notas que não foram enviadas para a SEFAZ ou estão em estado de erro, conforme imagem abaixo e clique no botão <strong>Pesquisar (F3)</strong></li>
+              <img src="imagens/linxmanager-nfe-filtro1.jpg" class="img-responsive">
+                <p>O sistema deve apresentar na Tela todas as notas pendentes no sistema que atendem aos filtros selecionados, selecione cada nota e clique no botão <strong>Processa documeto(s) ainda não processado(s)</strong></p>
+              <hr>
+              <li>Caso a verificação seja relacionada a NFC-e marque a Opção de <strong>NFC-e (Nota Fiscal ao Consumidor Eletrônica)</strong>, selecione os filtros: DATA, NFC-e e Pesquisa Avançada (marcando a opção de Pesquisa Avançada, automaticamente o sistema habilitará a Aba de <strong>PESQUISA AVANÇADA</strong>) após esse processo marque os filtros de status conforme imagem abaixo</li>
+              <img src="imagens/linxmanager-nfce-filtro.jpg" class="img-responsive"><hr>
               <li>O sistema retornará com a Tela abaixo, com as notas pendentes com os status selecionados no filtro</li>
-              <img src="imagens/linxmanager-nfce-pesquisa.jpg" class="img-responsive">
+              <img src="imagens/linxmanager-nfce-pesquisa.jpg" class="img-responsive"><hr>
               <li>
-                Selecionar as Notas que não foram enviadas<br>
-                Clicar em PROCESSA NF-es AINDA NÃO PROCESSADAS ou ENVIAR PARA AUTORIZAÇÃO SEFAZ<br>
-               dependende do status da nota.
+                Selecionar as Notas que não foram enviadas ou estão em estado de erro<br>
+                Clique no botão <strong>Processa documeto(s) ainda não processado(s)</strong> ou <strong>Enviar para autorização SEFAZ</strong><br>
+               de acordo com o status da nota.
               </li>
               <!-- Inserir a tela com o procedimento correto
               <img src="imagens/construcao.png" class="img-ajustada">
@@ -624,4 +818,15 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
+  <footer>
+    <div class="footer">
+    <div class="row col-md-6">
+      </div>
+    <div class="row col-md-6"  align="right">
+          <p>Desenvolvido por: Augusto Borges</p>
+          <p>Colaboradores: Tauã Fernandes/Kaike Souto</p>
+          <p>Críticas e sugestões: <a href="mailto:augusto.borges@mariafilo.com.br">augusto.borges@mariafilo.com.br</a></p>
+      </div>
+    </div>
+</footer>
 </html>

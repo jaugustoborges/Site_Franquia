@@ -2,6 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -42,6 +43,7 @@
             <li> <a href="linxpos.html">LinxPOS</a> </li>
             <li> <a href="linxmanager.html">LinxPOS Manager</a> </li>
             <li> <a href="linxretaguarda.html">Linx ERP Retaguarda</a> </li>
+            <li> <a href="linxweb.html">LinxWeb</a> </li>
             <li> <a href="mide.html">Mid-e</a> </li>
             <li> <a href="xml.html">XML</a> </li>
             <li> <a href="suporte.html">Suporte</a> </li>
@@ -69,9 +71,30 @@
 
    		<div class="page-header" id="area-principal">
    			<h1>Mid-e Client</h1>
-        <img src="imagens/construcao.png" class="img-ajustada">
+        <p>
+          Na Linx, o middleware desenvolvido é o MID-e Central, responsável pela mediação entre MID-e Client e a SEFAZ/SAT. É responsável pelo envio e recebimento de informações entre os sistemas de diferentes protocolos, plataformas e sistemas operacionais.<br>Já o MID-e Client, é responsável pela mediação das informações entre o PDV e o MID-e Central. Para o Estado de São Paulo, o MID-e Client também será responsável pela mediação das informações entre o PDV e o aparelho SAT, além de encaminhar os cupons autorizados pelo SAT para guarda no MID-e Central.<br>Para mais informações, acesse o site da <a href="https://portal.fazenda.sp.gov.br/servicos/sat/Paginas/Sobre.aspx" target="_blank">Secretaria da Fazenda de São Paulo</a>
+        </p>
+        <h3>Entenda o processo:</h3>
+        <img src="imagens/mide-processo.png" class="img-responsive"><hr>
+        <h3>Erros e Dúvidas frequentes:</h3>
+        <p>Ao acessar o <strong>LinxPOS</strong> ou <strong>LinxPOS Manager</strong> o sistema apresenta a seguinte mensagem:</p><img src="imagens/linxpos-erro-mide1.png" class="img-responsive">
+        <p>Nesses casos o problema ocorre pois o serviço do Mid-e Client está travado ou não está se comunicando com o sistema (LinxPOS e LinxPOS Manager).<hr><strong>Correção:</strong><br>Será necessário reiniciar o serviço do Mid-e Client.</p>
+
+        <ol>
+          <li>Na barra de tarefas e na área de trabalho do terminal de venda temos o Icone do Mid-e Client com o nome de <strong>Configurações</strong> (Clique duas vezes para acessar)<img src="imagens/mide-icone.jpg" class="img-responsive"></li><hr>
+          <li>Irá abrir a tela:<img src="imagens/mide-login.jpg" class="img-responsive">Clique no botão <strong>Parar Serviço</strong></li><hr>
+          <li>Em seguida Clique no botão ao lado do CNPJ <img src="imagens/linxpos-erro-mide2.png" class="img-responsive"></li><hr>
+          <li>Com isso a janela habilitará o botão <strong>Iniciar Serviço</strong><img src="imagens/linxpos-erro-mide3.png" class="img-responsive">Clique no botão <strong>Iniciar Serviço</strong></li><hr>
+          <li>Após todo o processo o Mid-e estará com o <strong>Serviço inicializado!</strong> <img src="imagens/linxpos-erro-mide4.png" class="img-responsive"><br>Feche a janela, inicie o LinxPOS ou LinxPOS Manager, a mensagem de Erro de comunicação não deve aparecer novamente.  
+          </li>
+        </ol>
    		</div>
-      
+      <div align="right">
+            <a class="btn btn-primary btn-lg" href="#top" role="button"> 
+            <span class="glyphicon glyphicon-arrow-up"> Topo</span>
+            </a>
+          </div>
+          <hr>
    	</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -79,4 +102,15 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
+  <footer>
+    <div class="footer">
+    <div class="row col-md-6">
+      </div>
+    <div class="row col-md-6"  align="right">
+          <p>Desenvolvido por: Augusto Borges</p>
+          <p>Colaboradores: Tauã Fernandes/Kaike Souto</p>
+          <p>Críticas e sugestões: <a href="mailto:augusto.borges@mariafilo.com.br">augusto.borges@mariafilo.com.br</a></p>
+      </div>
+    </div>
+</footer>
 </html>

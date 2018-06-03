@@ -2,6 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -11,6 +12,10 @@
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="estilo.css" rel="stylesheet">
+    <!-- Codigo Kaike Bruxão -->
+    <meta name="description" content="Manuais Maria Filó - Portal de informações TI"><!--essa e a descrição do site -->
+    <meta name="keywords" content="HTML,CSS,JavaScript"><!-- essa e para o google acha mais facil-->
+    <meta name="author" content="Augusto Borges"><!-- essa e para quem acesa o código ver quem fez-->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,6 +47,7 @@
             <li> <a href="linxpos.html">LinxPOS</a> </li>
             <li> <a href="linxmanager.html">LinxPOS Manager</a> </li>
             <li> <a href="linxretaguarda.html">Linx ERP Retaguarda</a> </li>
+            <li> <a href="linxweb.html">LinxWeb</a> </li>
             <li> <a href="mide.html">Mid-e</a> </li>
             <li> <a href="xml.html">XML</a> </li>
             <li> <a href="suporte.html">Suporte</a> </li>
@@ -53,7 +59,7 @@
                 Minha Conta <span class="caret"></span>
               </a> 
               <ul class="dropdown-menu">
-                <li> <a href="#">Editar</a> </li>
+                <li> <a shref="#">Editar</a> </li>
                 <li> <a href="#">Logout</a> </li>
               </ul>
 
@@ -69,20 +75,80 @@
    	<div class="container">
 
    		<div class="page-header" id="area-principal">
-   			<h1>Manual XML</h1>
+   			<h1>Geração do arquivo XML para NF-e e NFC-e</h1>
 			   <p>Este manual destina-se às empresas contratantes do MID-e Central. MID-e é uma aplicação Middleware utilizada para comunicação dos sistemas Linx com a Secretaria da Fazenda dos Estados para emissão de Nota Fiscal Eletrônica (NF-e) e Nota Fiscal de Consumidor Eletrônica (NFC-e).</p><hr>
 			     
-          <p>
-            Para acessar o portal é necessario os seguintes programas instalados no computador:
-          </p>
+          <!-- XML para NFe -->
+          <h3>XML para Nota Fiscal Eletrônica (NF-e)</h3>
+          <table class="table table-striped">
+            <tbody>
+              <tr>                  
+                <td><img src="imagens/icone-info.png"></td>
+                <td><br>A <strong>NF-e</strong>  é o documento fiscal propriamente dito, com validade jurídica e existência exclusivamente digital (arquivo XML).<br> Corresponde as <strong>TROCAS e DEVOLUÇÕES</strong> realizadas no sistema Linx.</td>
+              </tr>
+            </tbody>
+          </table>
           <hr>
-				    <span class="contato"> 
+          <h3>Acesso ao Portal NF-e</h3>
+            <p> 
+              Para acessar o PORTAL - NOTA FISCAL ELETRÔNICA, o usuário Cliente deverá acessar o Link do endereço: <a href="http://novoportal.linxnfe.com.br" target="_blank">http://novoportal.linxnfe.com.br</a>. O sistema irá apresentar a tela de login.<br>Informe usuário e senha em seguida clique no botão verde <strong>Entrar</strong> no canto superior direto. Será apresentada a tela inicial.
+            </p>
+            <hr>
+              <img src="imagens/xml8.png" class="img-responsive"><hr>
+            <p>
+              Clique na opção <strong>Download XML NF-e</strong>.
+            </p>
+              <img src="imagens/xml9.png" class="img-responsive"><hr>
+            <p>
+              Selecione o período (Data emissão) e o Emissor em seguida clique no botão <strong>Gerar arquivos</strong> 
+            </p>
+            <hr>
+            <img src="imagens/xml10.png" class="img-responsive">
+            <hr>
+            <p>
+              O sistema irá apresentar na tela o <strong>Resumo do download</strong> com a quantidade de NF-e's emitidas no período (autorizadas, canceladas e inutilizadas)<br> Clique para realizar o download da consulta.
+            </p>
+              <img src="imagens/xml11.png" class="img-responsive"><hr>
+            <p>
+              Após o download estará no computador o arquivo.zip com todos os XML's.
+            </p>
+            <hr>
+            <img src="imagens/xml12.png" class="img-responsive">
+            <hr>
+            <div>
+              <br>
+              <br>
+              <br>
+            </div>
+            <!-- XML para NFC-e -->
+            <h3>XML para Nota Fiscal de Consumidor Eletrônica (NFC-e)</h3>
+            <table class="table table-striped">
+            <tbody>
+              <tr>                  
+                <td><img src="imagens/icone-info.png"></td>
+                <td><br>A <strong>NFC-e</strong>  é o documento fiscal propriamente dito, com validade jurídica e existência exclusivamente digital (arquivo XML).<br> Corresponde as <strong>VENDAS</strong> realizadas no sistema Linx.</td>
+              </tr>
+            </tbody>
+          </table>
+            <h3>Acesso ao Portal NFC-e</h3>
+            <p>
+              Para acessar o portal é necessario os seguintes programas instalados no computador:
+            </p>
+            <hr>
+            <span class="contato"> 
               <strong>Silverlight</strong> <a href="https://www.microsoft.com/silverlight/" target="_blank">https://www.microsoft.com/silverlight</a>
             </span><br>
             <span class="contato"> 
               <strong>Internet Explorer</strong> <a href="https://www.microsoft.com/pt-br/download/internet-explorer-11-for-windows-7-details.aspx" target="_blank">https://www.microsoft.com/pt-br/download/internet-explorer.aspx</a>
             </span><br>
-            <h3>Acesso ao Portal</h3>
+            <table class="table table-striped">
+                  <tbody>
+                    <tr>                  
+                      <td><img src="imagens/icone-alerta.png"></td>
+                      <td><br>Caso exista a necessidade de instalação do programa <strong>Silverlight</strong> é necessário fechar o navegador <strong>Internet Explorer</strong> antes de realizar o acesso ao portal.</td>
+                    </tr>
+                  </tbody>
+                </table>
             <p> 
               Para acessar o portal do MID-e, o usuário Cliente deverá acessar o Link do endereço: <a href="http://portal.mide.linxsaas.com.br/portal" target="_blank">http://portal.mide.linxsaas.com.br/portal</a>. O sistema irá apresentar a tela Login:
             </p>
@@ -93,22 +159,22 @@
             <hr>
             <p>Informe a senha atual e a nova senha. Em seguida reinforme a nova senha e clique  no botão <strong>OK</strong>.<br>A nova senha de acesso que acaba de ser cadastrada será salva e será apresentada a tela inicial do sistema.</p>
             <!-- Download XML -->
-            <h3>Download XML's</h3>
+            <h3>Download XML's NFC-e</h3>
             <p>Acesso ao Módulo: MID-e Cliente Master / Movimentações / Download de XMLs</p>
             <hr>
             <img src="imagens/xml2.png" class="img-responsive">
             <hr>
-            <p>O sistema irá apresentar a tela <strong>Download de XMLs.</strong><br>Nesta tela o usuário poderá realizar o download dos arquivos (em lote ou individualmente).</p>
+            <p>O sistema irá apresentar a tela <strong>Download de XMLs</strong> (Clique duas vezes para acessar).<br>Nesta tela o usuário poderá realizar o download dos arquivos (em lote ou individualmente).</p>
             <img src="imagens/xml3.png" class="img-responsive">
             <hr>
             <p>
               No agrupamento <strong>Download de XML</strong>.<br>
-              No campo<strong>Grupo Econômico</strong> clique na <strong>Lupa</strong>.<br>
+              No campo <strong>Grupo Econômico</strong> clique na <strong>Lupa</strong>.<br>
               No campo <strong>Cadastro</strong>  clique na <strong>1ª Lupa</strong>  para selecionar o ID do cadastro e na <strong>2ª Lupa</strong>  para selecionar o nome do emissor.<br>
               No campo <strong>CNPJ</strong> clique na <strong>Lupa</strong> para selecionar o CNPJ do emissor.<br>
               No campo <strong>Emissão</strong> informe um range de datas para a pesquisa do período (00/00/0000 a 00/00/0000).<br>
-              Selecione um dos checkbox <strong>NF-e, NFC-e/CFe SAT, NF-e de Entrada</strong>.<br>
-              O sistema irá preencher os campos <strong>Grupo Econômico</strong>,<strong>Cadastro</strong> e<strong>CNPJ</strong> conforme o <strong>Grupo Econômico</strong> selecionado na guia <strong>Preferências</strong> no Menu <strong>Grupo Econômico</strong> vinculado ao usuário logado.<br>
+              Selecione o checkbox <strong>NFC-e/CFe SAT </strong>.<br>
+              O sistema irá preencher os campos <strong>Grupo Econômico</strong>, <strong>Cadastro</strong> e <strong>CNPJ</strong> conforme o <strong>Grupo Econômico</strong> selecionado na guia <strong>Preferências</strong> no Menu <strong>Grupo Econômico</strong> vinculado ao usuário logado.<br>
               Os outros campos (<strong>Id. Nota, Nr. Nota Inicial, Nr. Nota Final e Status Nota</strong>) são opcionais para a pesquisa.<br>
               Clique no botão <strong>Pesquisar Informações</strong>.<br>
               O Sistema deverá realizar a busca e apresentar a relação das notas na grid<strong>Notas</strong> da tela<strong>Download de XMLs</strong> composta pelas seguintes colunas (<strong>Selecionar, Id. Produto, Produto, Id. Cadastro, Razão Social, Id Nota, Nr. Nota Inicial, Nr. Nota Final, Série Nf e Emissão</strong> ).
@@ -151,4 +217,15 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
+  <footer>
+    <div class="footer">
+    <div class="row col-md-6">
+      </div>
+    <div class="row col-md-6"  align="right">
+          <p>Desenvolvido por: Augusto Borges</p>
+          <p>Colaboradores: Tauã Fernandes/Kaike Souto</p>
+          <p>Críticas e sugestões: <a href="mailto:augusto.borges@mariafilo.com.br">augusto.borges@mariafilo.com.br</a></p>
+      </div>
+    </div>
+</footer>
 </html>
